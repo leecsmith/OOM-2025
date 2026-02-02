@@ -29,7 +29,7 @@
   </table>
 
   <script>
-    fetch('data.json')
+    fetch('data.json?v=' + Date.now())
       .then(res => res.json())
       .then(data => {
         const tbody = document.querySelector('#leaderboard tbody');
@@ -54,3 +54,4 @@
   </script>
 </body>
 </html>
+
