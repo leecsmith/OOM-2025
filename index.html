@@ -1,444 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOM Leaderboard</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-            overflow: hidden;
-        }
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-        header h1 { font-size: 2.5em; margin-bottom: 10px; }
-        header p { opacity: 0.9; font-size: 1.1em; }
-        .tabs {
-            display: flex;
-            background: #f5f5f5;
-            border-bottom: 2px solid #ddd;
-        }
-        .tab {
-            flex: 1;
-            padding: 15px;
-            text-align: center;
-            cursor: pointer;
-            background: #f5f5f5;
-            border: none;
-            font-size: 1.1em;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-        .tab:hover { background: #e0e0e0; }
-        .tab.active {
-            background: white;
-            color: #667eea;
-            border-bottom: 3px solid #667eea;
-        }
-        .content { padding: 30px; }
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th {
-            background: #667eea;
-            color: white;
-            padding: 15px;
-            text-align: left;
-            font-weight: 600;
-        }
-        td { padding: 12px 15px; border-bottom: 1px solid #eee; }
-        tr:hover { background: #f9f9f9; }
-        .position { font-weight: bold; color: #667eea; width: 60px; }
-        .points { font-weight: bold; color: #667eea; }
-        .competition-selector { margin-bottom: 20px; }
-        .competition-selector select {
-            padding: 10px 15px;
-            font-size: 1em;
-            border: 2px solid #ddd;
-            border-radius: 5px;
-            width: 100%;
-            max-width: 400px;
-        }
-        .last-updated {
-            text-align: center;
-            color: #666;
-            margin-top: 20px;
-            font-size: 0.9em;
-        }
-        .loading { text-align: center; padding: 40px; color: #666; }
-        .clickable-score {
-            cursor: pointer;
-            color: #667eea;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-        .clickable-score:hover {
-            color: #764ba2;
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.5);
-            overflow: auto;
-        }
-        .modal-content {
-            background-color: white;
-            margin: 5% auto;
-            padding: 30px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 800px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .close:hover { color: #000; }
-        .holes-grid {
-            display: grid;
-            grid-template-columns: repeat(9, 1fr);
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .hole-cell {
-            text-align: center;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background: #f9f9f9;
-        }
-        .hole-number {
-            font-size: 0.8em;
-            color: #666;
-            margin-bottom: 5px;
-        }
-        .hole-score {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #667eea;
-        }
-        .hole-score.good { color: #28a745; }
-        .hole-score.bad { color: #dc3545; }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Overall Leaderboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 24px; }
+    h1 { margin-bottom: 12px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { padding: 10px; border-bottom: 1px solid #ddd; }
+    th { text-align: left; background: #f5f5f5; }
+    tr:hover { background: #f9f9f9; cursor: pointer; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🏌️ OOM Leaderboard</h1>
-            <p>Order of Merit Competition Standings</p>
-        </header>
-        <div class="tabs">
-            <button class="tab active" onclick="showTab('overall')">Overall Leaderboard</button>
-            <button class="tab" onclick="showTab('competitions')">Competitions</button>
-        </div>
-        <div class="content">
-            <div id="overall" class="tab-content active">
-                <div id="overall-content"><div class="loading">Loading data...</div></div>
-            </div>
-            <div id="competitions" class="tab-content">
-                <div class="competition-selector">
-                    <select id="comp-select" onchange="showCompetition()">
-                        <option value="">Select a competition...</option>
-                    </select>
-                </div>
-                <div id="comp-content">
-                    <div class="loading">Select a competition to view leaderboard</div>
-                </div>
-            </div>
-            <div class="last-updated" id="last-updated"></div>
-        </div>
-    </div>
-    
-    <!-- Modal for hole-by-hole scores -->
-    <div id="holeModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeHoleModal()">&times;</span>
-            <h2 id="modal-title">Hole-by-Hole Scores</h2>
-            <div id="modal-body"></div>
-        </div>
-    </div>
-    <script>
-        let data = null;
-        console.log('Script loaded, starting data fetch...');
-        
-        function showTab(tabName) {
-            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-            event.target.classList.add('active');
-            document.getElementById(tabName).classList.add('active');
-            if (tabName === 'competitions' && data) populateCompetitionSelector();
-        }
-        function getMedal(position) {
-            if (position === 1) return '🥇';
-            if (position === 2) return '🥈';
-            if (position === 3) return '🥉';
-            return position;
-        }
-        function renderOverallLeaderboard() {
-            const container = document.getElementById('overall-content');
-            if (!data || !data.overallLeaderboard) {
-                container.innerHTML = '<div class="loading">No data available</div>';
-                return;
-            }
-            let html = '<table><thead><tr>';
-            html += '<th>Pos</th><th>Player</th><th>Comps</th><th>Rounds</th>';
-            html += '<th>Stableford</th><th>Bonus</th><th class="points">Total Points</th>';
-            if (data.competitions && data.competitions.length > 0) {
-                data.competitions.forEach(comp => {
-                    html += `<th>${comp.name}</th>`;
-                });
-            }
-            html += '</tr></thead><tbody>';
-            data.overallLeaderboard.forEach(player => {
-                html += '<tr>';
-                html += `<td class="position">${getMedal(player.position)}</td>`;
-                html += `<td>${player.playerName}</td>`;
-                html += `<td>${player.competitions}</td>`;
-                html += `<td>${player.totalRounds}</td>`;
-                html += `<td>${player.totalStableford}</td>`;
-                html += `<td>${player.totalBonus}</td>`;
-                html += `<td class="points">${player.totalPoints}</td>`;
-                if (data.competitions) {
-                    data.competitions.forEach(comp => {
-                        const score = player.competitionScores[comp.id] || player.competitionScores[String(comp.id)] || '';
-                        html += `<td>${score}</td>`;
-                    });
-                }
-                html += '</tr>';
-            });
-            html += '</tbody></table>';
-            container.innerHTML = html;
-        }
-        function populateCompetitionSelector() {
-            const select = document.getElementById('comp-select');
-            select.innerHTML = '<option value="">Select a competition...</option>';
-            if (data && data.competitions) {
-                data.competitions.forEach(comp => {
-                    const option = document.createElement('option');
-                    option.value = comp.id;
-                    option.textContent = comp.name;
-                    select.appendChild(option);
-                });
-            }
-        }
-        function showCompetition() {
-            const select = document.getElementById('comp-select');
-            const compId = select.value;
-            const container = document.getElementById('comp-content');
-            if (!compId) {
-                container.innerHTML = '<div class="loading">Select a competition to view leaderboard</div>';
-                return;
-            }
-            const comp = data.competitions.find(c => c.id == compId || c.id == parseInt(compId) || String(c.id) === compId);
-            if (!comp || !comp.leaderboard) {
-                container.innerHTML = '<div class="loading">No data available</div>';
-                return;
-            }
-            let html = `<h2>${comp.name}</h2>`;
-            html += '<p style="color: #666; margin-bottom: 15px;">Click on a player's score to view hole-by-hole breakdown</p>';
-            html += '<table><thead><tr>';
-            html += '<th>Pos</th><th>Player</th><th>Rounds</th>';
-            html += '<th>Stableford</th><th>Bonus</th><th class="points">Total Points</th>';
-            html += '</tr></thead><tbody>';
-            comp.leaderboard.forEach(player => {
-                const hasHoleData = player.holeData && player.holeData.holes;
-                const scoreClass = hasHoleData ? 'clickable-score' : '';
-                const scoreOnClick = hasHoleData ? `onclick="showHoleScores('${player.playerName}', ${JSON.stringify(player.holeData).replace(/'/g, "&#39;")})"` : '';
-                html += '<tr>';
-                html += `<td class="position">${getMedal(player.position)}</td>`;
-                html += `<td>${player.playerName}</td>`;
-                html += `<td>${player.rounds}</td>`;
-                html += `<td>${player.stableford}</td>`;
-                html += `<td>${player.bonus}</td>`;
-                html += `<td class="points ${scoreClass}" ${scoreOnClick}>${player.points}</td>`;
-                html += '</tr>';
-            });
-            html += '</tbody></table>';
-            container.innerHTML = html;
-        }
-        
-        function showHoleScores(playerName, holeData) {
-            const modal = document.getElementById('holeModal');
-            const title = document.getElementById('modal-title');
-            const body = document.getElementById('modal-body');
-            
-            title.textContent = `${playerName} - Hole-by-Hole Scores`;
-            
-            let html = '<div style="margin-bottom: 20px;">';
-            html += `<p><strong>Stableford Points:</strong> ${holeData.stableford}</p>`;
-            html += `<p><strong>Bonus Points:</strong> ${holeData.bonus}</p>`;
-            html += `<p><strong>Total Points:</strong> ${holeData.total}</p>`;
-            if (holeData.date) {
-                html += `<p><strong>Date:</strong> ${holeData.date}</p>`;
-            }
-            html += '</div>';
-            
-            html += '<div class="holes-grid">';
-            for (let hole = 1; hole <= 18; hole++) {
-                const score = holeData.holes[hole];
-                let scoreClass = '';
-                if (score !== undefined && score !== null && score !== '') {
-                    const numScore = parseInt(score);
-                    if (numScore >= 3) scoreClass = 'good';
-                    else if (numScore === 0) scoreClass = 'bad';
-                }
-                html += '<div class="hole-cell">';
-                html += `<div class="hole-number">Hole ${hole}</div>`;
-                html += `<div class="hole-score ${scoreClass}">${score !== undefined && score !== null && score !== '' ? score : '-'}</div>`;
-                html += '</div>';
-            }
-            html += '</div>';
-            
-            body.innerHTML = html;
-            modal.style.display = 'block';
-        }
-        
-        function closeHoleModal() {
-            document.getElementById('holeModal').style.display = 'none';
-        }
-        
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            const modal = document.getElementById('holeModal');
-            if (event.target == modal) {
-                closeHoleModal();
-            }
-        }
-        // Load data.json with better error handling and cache-busting
-        console.log('Fetching data.json...');
-        
-        function tryFetchData(useCacheBuster = false) {
-            const url = useCacheBuster ? 'data.json?v=' + new Date().getTime() : 'data.json';
-            console.log('Attempting fetch:', url);
-            
-            return fetch(url, {
-                method: 'GET',
-                cache: useCacheBuster ? 'no-store' : 'default',
-                headers: {
-                    'Accept': 'application/json',
-                    'Cache-Control': useCacheBuster ? 'no-cache' : 'max-age=0'
-                }
-            });
-        }
-        
-        // Try without cache-buster first, then with if it fails
-        tryFetchData(false)
-            .then(response => {
-                console.log('Response received:', response.status, response.statusText);
-                console.log('Content-Type:', response.headers.get('content-type'));
-                console.log('URL:', response.url);
-                
-                if (!response.ok) {
-                    // If 404 or cache issue, try with cache-buster
-                    if (response.status === 404 || response.status === 0) {
-                        console.log('First attempt failed, trying with cache-buster...');
-                        return tryFetchData(true).then(retryResponse => {
-                            if (!retryResponse.ok) {
-                                throw new Error(`HTTP ${retryResponse.status}: ${retryResponse.statusText}`);
-                            }
-                            return retryResponse.text().then(text => {
-                                if (text.length === 0) {
-                                    throw new Error('Empty response from server');
-                                }
-                                try {
-                                    return JSON.parse(text);
-                                } catch (e) {
-                                    console.error('JSON parse error on retry:', e);
-                                    throw new Error('Invalid JSON: ' + e.message);
-                                }
-                            });
-                        });
-                    }
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                }
-                
-                const contentType = response.headers.get('content-type');
-                if (contentType && !contentType.includes('application/json') && !contentType.includes('text/plain')) {
-                    console.warn('Warning: Unexpected content-type:', contentType);
-                }
-                
-                return response.text().then(text => {
-                    console.log('Response text length:', text.length);
-                    if (text.length === 0) {
-                        throw new Error('Empty response from server');
-                    }
-                    try {
-                        return JSON.parse(text);
-                    } catch (e) {
-                        console.error('JSON parse error:', e);
-                        console.error('First 500 chars of response:', text.substring(0, 500));
-                        throw new Error('Invalid JSON: ' + e.message);
-                    }
-                });
-            })
-            .then(json => {
-                console.log('JSON parsed successfully');
-                console.log('Data structure:', {
-                    hasLeaderboard: !!json.overallLeaderboard,
-                    leaderboardLength: json.overallLeaderboard?.length,
-                    hasCompetitions: !!json.competitions,
-                    competitionsLength: json.competitions?.length
-                });
-                
-                // Validate data structure
-                if (!json.overallLeaderboard || !Array.isArray(json.overallLeaderboard)) {
-                    throw new Error('Invalid data format: missing overallLeaderboard array');
-                }
-                if (!json.competitions || !Array.isArray(json.competitions)) {
-                    throw new Error('Invalid data format: missing competitions array');
-                }
-                
-                data = json;
-                console.log('Rendering leaderboard...');
-                renderOverallLeaderboard();
-                populateCompetitionSelector();
-                if (json.lastUpdated) {
-                    const date = new Date(json.lastUpdated);
-                    document.getElementById('last-updated').textContent = 
-                        `Last updated: ${date.toLocaleString()}`;
-                }
-                console.log('Data loaded and rendered successfully!');
-            })
-            .catch(error => {
-                console.error('Error loading data:', error);
-                console.error('Error stack:', error.stack);
-                const container = document.getElementById('overall-content');
-                let errorMsg = '<div style="padding: 40px; color: #dc3545; text-align: center;">';
-                errorMsg += '<h3 style="margin-bottom: 15px; color: #dc3545;">⚠️ Error Loading Data</h3>';
-                errorMsg += '<p style="margin-bottom: 20px;"><strong>Problem:</strong> Cannot load data.json</p>';
-                errorMsg += '<p style="margin-top: 10px; font-size: 0.9em; color: #666;">Error: ' + error.message + '</p>';
-                errorMsg += '<p style="margin-top: 15px; font-size: 0.9em;">Open browser console (F12) to see detailed error information.</p>';
-                errorMsg += '</div>';
-                container.innerHTML = errorMsg;
-            });
-    </script>
+  <h1>Overall Leaderboard</h1>
+  <table id="leaderboard">
+    <thead>
+      <tr>
+        <th>Pos</th>
+        <th>Player</th>
+        <th>Points</th>
+        <th>Stableford</th>
+        <th>Rounds</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        const tbody = document.querySelector('#leaderboard tbody');
+
+        data.overallLeaderboard
+          .sort((a, b) => a.position - b.position)
+          .forEach(player => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+              <td>${player.position}</td>
+              <td>${player.playerName}</td>
+              <td>${player.totalPoints}</td>
+              <td>${player.totalStableford}</td>
+              <td>${player.totalRounds}</td>
+            `;
+            tr.onclick = () => {
+              window.location.href = `player.html?id=${player.playerId}`;
+            };
+            tbody.appendChild(tr);
+          });
+      });
+  </script>
 </body>
 </html>
