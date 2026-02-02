@@ -187,6 +187,8 @@
     </div>
     <script>
         let data = null;
+        console.log('Script loaded, starting data fetch...');
+        
         function showTab(tabName) {
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
@@ -226,7 +228,7 @@
                 html += `<td class="points">${player.totalPoints}</td>`;
                 if (data.competitions) {
                     data.competitions.forEach(comp => {
-                        const score = player.competitionScores[comp.id] || '';
+                        const score = player.competitionScores[comp.id] || player.competitionScores[String(comp.id)] || '';
                         html += `<td>${score}</td>`;
                     });
                 }
@@ -255,7 +257,7 @@
                 container.innerHTML = '<div class="loading">Select a competition to view leaderboard</div>';
                 return;
             }
-            const comp = data.competitions.find(c => c.id == compId);
+            const comp = data.competitions.find(c => c.id == compId || c.id == parseInt(compId) || String(c.id) === compId);
             if (!comp || !comp.leaderboard) {
                 container.innerHTML = '<div class="loading">No data available</div>';
                 return;
@@ -330,10 +332,35 @@
                 closeHoleModal();
             }
         }
+        // Load data.json with better error handling
+        console.log('Fetching data.json...');
         fetch('data.json')
-            .then(response => response.json())
+            .then(response => {
+                console.log('Response received:', response.status, response.statusText);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                return response.json();
+            })
             .then(json => {
+                console.log('JSON parsed successfully');
+                console.log('Data structure:', {
+                    hasLeaderboard: !!json.overallLeaderboard,
+                    leaderboardLength: json.overallLeaderboard?.length,
+                    hasCompetitions: !!json.competitions,
+                    competitionsLength: json.competitions?.length
+                });
+                
+                // Validate data structure
+                if (!json.overallLeaderboard || !Array.isArray(json.overallLeaderboard)) {
+                    throw new Error('Invalid data format: missing overallLeaderboard array');
+                }
+                if (!json.competitions || !Array.isArray(json.competitions)) {
+                    throw new Error('Invalid data format: missing competitions array');
+                }
+                
                 data = json;
+                console.log('Rendering leaderboard...');
                 renderOverallLeaderboard();
                 populateCompetitionSelector();
                 if (json.lastUpdated) {
@@ -341,11 +368,19 @@
                     document.getElementById('last-updated').textContent = 
                         `Last updated: ${date.toLocaleString()}`;
                 }
+                console.log('Data loaded and rendered successfully!');
             })
             .catch(error => {
                 console.error('Error loading data:', error);
-                document.getElementById('overall-content').innerHTML = 
-                    '<div class="loading">Error loading data. Make sure data.json exists.</div>';
+                console.error('Error stack:', error.stack);
+                const container = document.getElementById('overall-content');
+                let errorMsg = '<div style="padding: 40px; color: #dc3545; text-align: center;">';
+                errorMsg += '<h3 style="margin-bottom: 15px; color: #dc3545;">⚠️ Error Loading Data</h3>';
+                errorMsg += '<p style="margin-bottom: 20px;"><strong>Problem:</strong> Cannot load data.json</p>';
+                errorMsg += '<p style="margin-top: 10px; font-size: 0.9em; color: #666;">Error: ' + error.message + '</p>';
+                errorMsg += '<p style="margin-top: 15px; font-size: 0.9em;">Open browser console (F12) to see detailed error information.</p>';
+                errorMsg += '</div>';
+                container.innerHTML = errorMsg;
             });
     </script>
 </body>
