@@ -889,15 +889,14 @@
     const el = document.getElementById('leaderboard-content');
     if (!data || !data.overallLeaderboard) return;
     let html = '<table class="leaderboard-table"><thead><tr>';
-    html += '<th class="center">Pos</th><th>Player</th><th class="center">Comps</th><th class="center">Rounds</th>';
-    html += '<th class="center">Stableford</th><th class="center">Bonus</th><th class="center score-total">Total</th>';
+    html += '<th class="center">Pos</th><th>Player</th><th class="center">Comps</th>';
+    html += '<th class="center score-total">Total</th>';
     (data.competitions || []).forEach(c => { html += '<th class="center">' + (c.name || '') + '</th>'; });
     html += '</tr></thead><tbody>';
     data.overallLeaderboard.forEach(p => {
       html += '<tr><td class="center"><span class="pos-badge ' + posClass(p.position) + '">' + p.position + '</span></td>';
       html += '<td><span class="player-name">' + (p.playerName || '') + '</span></td>';
-      html += '<td class="center">' + (p.competitions || 0) + '</td><td class="center">' + (p.totalRounds || 0) + '</td>';
-      html += '<td class="center score-cell">' + (p.totalStableford || 0) + '</td><td class="center score-cell">' + (p.totalBonus || 0) + '</td>';
+      html += '<td class="center">' + (p.competitions || 0) + '</td>';
       html += '<td class="center score-total">' + (p.totalPoints || 0) + '</td>';
       (data.competitions || []).forEach(c => {
         const score = (p.competitionScores && (p.competitionScores[c.id] ?? p.competitionScores[String(c.id)])) || '';
@@ -989,23 +988,29 @@
         }
       });
     });
-    roundSelect.innerHTML = roundOptions.map((r, i) =>
-      '<option value="' + i + '">' + r.compName + ' — ' + r.playerName + '</option>'
-    ).join('');
+
+    function fillRoundDropdownForPlayer(playerId) {
+      const playerRounds = roundOptions.map((r, i) => ({ round: r, index: i })).filter(x => x.round.playerId === playerId);
+      roundSelect.innerHTML = playerRounds.map(pr =>
+        '<option value="' + pr.index + '">' + pr.round.compName + (pr.round.holeData.date ? ' — ' + pr.round.holeData.date : '') + '</option>'
+      ).join('');
+      return playerRounds.length > 0 ? playerRounds[0].index : -1;
+    }
 
     function updateRoundDisplay() {
       const playerId = parseInt(playerSelect.value, 10);
       const roundIdx = parseInt(roundSelect.value, 10);
       let round = roundOptions[roundIdx];
       if (!round || round.playerId !== playerId) {
-        const idx = roundOptions.findIndex(r => r.playerId === playerId);
-        if (idx >= 0) { roundSelect.selectedIndex = idx; round = roundOptions[idx]; }
+        const firstIdx = fillRoundDropdownForPlayer(playerId);
+        if (firstIdx >= 0) { roundSelect.value = firstIdx; round = roundOptions[firstIdx]; }
         else { scorecardEl.innerHTML = '<p style="padding:20px;color:#555;">No hole-by-hole data for this player.</p>'; return; }
       }
       const h = round.holeData;
       infoGrid.innerHTML = '<div class="info-card"><div class="info-label">Player</div><div class="info-value">' + round.playerName + '</div></div>';
       infoGrid.innerHTML += '<div class="info-card"><div class="info-label">Competition</div><div class="info-value">' + round.compName + '</div></div>';
       infoGrid.innerHTML += '<div class="info-card"><div class="info-label">Stableford Pts</div><div class="info-value" style="color:var(--red)">' + (h.total || '') + '</div></div>';
+      infoGrid.innerHTML += '<div class="info-card"><div class="info-label">Bonus Pts</div><div class="info-value">' + (h.bonus != null && h.bonus !== '' ? h.bonus : '0') + '</div></div>';
       if (h.date) infoGrid.innerHTML += '<div class="info-card"><div class="info-label">Date</div><div class="info-value">' + h.date + '</div></div>';
 
       let table = '<table class="full-scorecard"><thead><tr><th>Hole</th>';
