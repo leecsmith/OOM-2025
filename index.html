@@ -798,6 +798,10 @@
 <!-- MAIN -->
 
 <main>
+  <style>
+    /* Leaderboard: competitions not counting in best-8 total */
+    .non-scoring { color: #9aa0a6; }
+  </style>
   <!-- PAGE 1: LEADERBOARD -->
   <div class="page active" id="page-leaderboard">
     <h1 class="page-title">Order of Merit Leaderboard</h1>
@@ -900,7 +904,12 @@
       html += '<td class="center score-total">' + (p.totalPoints || 0) + '</td>';
       (data.competitions || []).forEach(c => {
         const score = (p.competitionScores && (p.competitionScores[c.id] ?? p.competitionScores[String(c.id)])) || '';
-        html += '<td class="center score-cell">' + score + '</td>';
+        const scoring = Array.isArray(p.scoringCompetitions)
+          ? (p.scoringCompetitions.includes(c.id) || p.scoringCompetitions.includes(String(c.id)))
+          : true;
+        const hasScore = !(score === '' || score === null || score === undefined);
+        const cls = 'center score-cell' + ((!scoring && hasScore) ? ' non-scoring' : '');
+        html += '<td class="' + cls + '">' + score + '</td>';
       });
       html += '</tr>';
     });
