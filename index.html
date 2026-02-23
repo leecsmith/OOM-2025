@@ -1027,7 +1027,8 @@
         else if (val >= 3) cls += ' stab-3';
         table += '<td class="' + cls + '">' + val + '</td>';
       }
-      table += '<td><strong style="color:var(--red)">' + (h.total || total) + '</strong></td></tr></tbody></table>';
+      // Show total Stableford points only (exclude bonus)
+      table += '<td><strong style="color:var(--red)">' + total + '</strong></td></tr></tbody></table>';
       scorecardEl.innerHTML = table;
     }
 
