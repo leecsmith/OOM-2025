@@ -917,6 +917,26 @@
     el.innerHTML = html;
   }
 
+  // Global helper: navigate from Individual Scores to Round Details
+  // for a specific player + competition.
+  window.goToRoundDetails = function(playerId, compId) {
+    window._pendingRoundSelection = { playerId, compId };
+    // Switch nav to Round Details page if possible
+    const navLinks = document.querySelectorAll('nav a');
+    const pages = document.querySelectorAll('.page');
+    navLinks.forEach(link => {
+      if (link.dataset.page === 'round-details') {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+    pages.forEach(p => p.classList.remove('active'));
+    const roundPage = document.getElementById('page-round-details');
+    if (roundPage) roundPage.classList.add('active');
+    // When renderRoundDetails runs (or re-runs), it will read _pendingRoundSelection
+  };
+
   function renderIndividualScores() {
     const btnContainer = document.getElementById('player-buttons');
     const contentEl = document.getElementById('scores-content');
@@ -940,6 +960,7 @@
         const entry = lb.find(e => e.playerId === pid || e.playerName === player.playerName);
         if (entry) {
           rounds.push({
+            compId: comp.id,
             compName: comp.name,
             stableford: entry.stableford,
             bonus: entry.bonus,
@@ -953,11 +974,28 @@
       panelsHtml += '<div class="profile-meta"><span>Position: ' + (player.position || '') + '</span><span>Rounds: ' + (player.totalRounds || 0) + '</span></div></div></div>';
       panelsHtml += '<div class="profile-body"><table class="rounds-table"><thead><tr><th>Competition</th><th class="center">Stableford</th><th class="center">Bonus</th><th class="right">Total Pts</th></tr></thead><tbody>';
       rounds.forEach(r => {
-        panelsHtml += '<tr><td>' + (r.compName || '') + '</td><td class="center">' + (r.stableford || '') + '</td><td class="center">' + (r.bonus || '') + '</td><td class="right"><span class="round-pts">' + (r.points || '') + '</span></td></tr>';
+        const clickable = r.holeData && r.holeData.holes;
+        const cellClass = clickable ? 'right clickable-score' : 'right';
+        const attrs = clickable
+          ? ' class="' + cellClass + '" data-player-id="' + pid + '" data-comp-id="' + r.compId + '"'
+          : ' class="' + cellClass + '"';
+        panelsHtml += '<tr><td>' + (r.compName || '') + '</td><td class="center">' + (r.stableford || '') + '</td><td class="center">' + (r.bonus || '') + '</td><td' + attrs + '>' + (r.points || '') + '</td></tr>';
       });
       panelsHtml += '</tbody></table></div></div>';
     });
     contentEl.innerHTML = panelsHtml;
+
+    // Clicking a Total Pts score should navigate to Round Details for that round
+    document.querySelectorAll('.clickable-score').forEach(cell => {
+      cell.addEventListener('click', function() {
+        const playerId = parseInt(this.dataset.playerId, 10);
+        const compId = parseInt(this.dataset.compId, 10);
+        if (isNaN(playerId) || isNaN(compId)) return;
+        if (window.goToRoundDetails) {
+          window.goToRoundDetails(playerId, compId);
+        }
+      });
+    });
 
     document.querySelectorAll('.player-btn').forEach(btn => {
       btn.addEventListener('click', function() {
@@ -998,22 +1036,39 @@
       });
     });
 
-    function fillRoundDropdownForPlayer(playerId) {
+    function fillRoundDropdownForPlayer(playerId, preferredCompId) {
       const playerRounds = roundOptions.map((r, i) => ({ round: r, index: i })).filter(x => x.round.playerId === playerId);
       roundSelect.innerHTML = playerRounds.map(pr =>
         '<option value="' + pr.index + '">' + pr.round.compName + (pr.round.holeData.date ? ' — ' + pr.round.holeData.date : '') + '</option>'
       ).join('');
-      return playerRounds.length > 0 ? playerRounds[0].index : -1;
+      // Choose preferred comp if provided, otherwise first
+      if (!playerRounds.length) return -1;
+      if (preferredCompId) {
+        const match = playerRounds.find(pr => pr.round.compId === preferredCompId);
+        return match ? match.index : playerRounds[0].index;
+      }
+      return playerRounds[0].index;
     }
 
     function updateRoundDisplay() {
       const playerId = parseInt(playerSelect.value, 10);
+      const pending = window._pendingRoundSelection || null;
+      const preferredCompId = pending && pending.playerId === playerId ? pending.compId : null;
       const roundIdx = parseInt(roundSelect.value, 10);
       let round = roundOptions[roundIdx];
-      if (!round || round.playerId !== playerId) {
-        const firstIdx = fillRoundDropdownForPlayer(playerId);
-        if (firstIdx >= 0) { roundSelect.value = firstIdx; round = roundOptions[firstIdx]; }
-        else { scorecardEl.innerHTML = '<p style="padding:20px;color:#555;">No hole-by-hole data for this player.</p>'; return; }
+      if (!round || round.playerId !== playerId || (preferredCompId && round.compId !== preferredCompId)) {
+        const idx = fillRoundDropdownForPlayer(playerId, preferredCompId);
+        if (idx >= 0) {
+          roundSelect.value = idx;
+          round = roundOptions[idx];
+        } else {
+          scorecardEl.innerHTML = '<p style="padding:20px;color:#555;">No hole-by-hole data for this player.</p>';
+          return;
+        }
+        // Clear pending selection once applied
+        if (pending && preferredCompId) {
+          window._pendingRoundSelection = null;
+        }
       }
       const h = round.holeData;
       infoGrid.innerHTML = '<div class="info-card"><div class="info-label">Player</div><div class="info-value">' + round.playerName + '</div></div>';
