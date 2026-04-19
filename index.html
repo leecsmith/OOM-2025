@@ -801,6 +801,14 @@
   <style>
     /* Leaderboard: competitions not counting in best-8 total */
     .non-scoring { color: #9aa0a6; }
+    .leaderboard-table thead th .th-sub {
+      display: block;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: none;
+      font-size: 0.72em;
+      opacity: 0.95;
+    }
   </style>
   <!-- PAGE 1: LEADERBOARD -->
   <div class="page active" id="page-leaderboard">
@@ -894,7 +902,8 @@
     if (!data || !data.overallLeaderboard) return;
     let html = '<table class="leaderboard-table"><thead><tr>';
     html += '<th class="center">Pos</th><th>Player</th><th class="center">Comps</th>';
-    html += '<th class="center score-total">Avg (best 8)</th>';
+    html += '<th class="center score-total" title="Mean of each player’s best 8 rounds (by total points)">Average<span class="th-sub">(best 8 rounds)</span></th>';
+    html += '<th class="center" title="Sum of total points from those same best 8 rounds">Total pts<span class="th-sub">(best 8 rounds)</span></th>';
     (data.competitions || []).forEach(c => { html += '<th class="center">' + (c.name || '') + '</th>'; });
     html += '</tr></thead><tbody>';
     data.overallLeaderboard.forEach(p => {
@@ -902,6 +911,7 @@
       html += '<td><span class="player-name">' + (p.playerName || '') + '</span></td>';
       html += '<td class="center">' + (p.competitions || 0) + '</td>';
       html += '<td class="center score-total">' + (p.averageBestEight != null ? p.averageBestEight : (p.totalPoints || 0)) + '</td>';
+      html += '<td class="center">' + (p.totalPoints != null ? p.totalPoints : 0) + '</td>';
       (data.competitions || []).forEach(c => {
         const score = (p.competitionScores && (p.competitionScores[c.id] ?? p.competitionScores[String(c.id)])) || '';
         const scoring = Array.isArray(p.scoringCompetitions)
