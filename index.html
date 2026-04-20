@@ -902,7 +902,7 @@
     if (!data || !data.overallLeaderboard) return;
     let html = '<table class="leaderboard-table"><thead><tr>';
     html += '<th class="center">Pos</th><th>Player</th><th class="center">Comps</th>';
-    html += '<th class="center score-total" title="Mean of each player’s best 8 rounds (by total points)"><font color="white">Average</font><span class="th-sub">(best 8 rounds)</span></th>';
+    html += '<th class="center score-total" title="Mean of each player’s best 8 rounds (by total points)">Average<span class="th-sub">(best 8 rounds)</span></th>';
     html += '<th class="center" title="Sum of total points from those same best 8 rounds">Total pts<span class="th-sub">(best 8 rounds)</span></th>';
     (data.competitions || []).forEach(c => { html += '<th class="center">' + (c.name || '') + '</th>'; });
     html += '</tr></thead><tbody>';
