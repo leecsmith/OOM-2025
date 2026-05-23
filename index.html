@@ -962,8 +962,8 @@
 
     window.addEventListener('popstate', applyRouteFromUrl);
 
-    // Load data.json
-    fetch('data.json?v=' + Date.now())
+    // Load data.json (cache-busted; website reads website/data.json only)
+    fetch('data.json?v=' + Date.now(), { cache: 'no-store' })
       .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(json => {
         if (!json.overallLeaderboard || !json.competitions) throw new Error('Invalid data');
@@ -976,7 +976,11 @@
         if (json.lastUpdated) {
           const d = new Date(json.lastUpdated);
           const footer = document.querySelector('.footer-text');
-          if (footer) footer.innerHTML += ' &nbsp;·&nbsp; Last updated: ' + d.toLocaleDateString();
+          const compCount = (json.competitions || []).length;
+          if (footer) {
+            footer.innerHTML += ' &nbsp;·&nbsp; Data: ' + d.toLocaleString()
+              + ' &nbsp;·&nbsp; ' + compCount + ' competitions';
+          }
         }
       })
       .catch(err => {
