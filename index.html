@@ -791,25 +791,13 @@
   <ul>
     <li><a href="#" class="active" data-page="leaderboard">Leaderboard</a></li>
     <li><a href="#" data-page="scores">Individual Scores</a></li>
-    <li><a href="#" data-page="competition-scores">Competition Scores</a></li>
     <li><a href="#" data-page="round">Round Details</a></li>
   </ul>
 </nav>
 
+<!-- MAIN -->
 
 <main>
-  <style>
-    /* Leaderboard: competitions not counting in best-8 total */
-    .non-scoring { color: #9aa0a6; }
-    .leaderboard-table thead th .th-sub {
-      display: block;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      text-transform: none;
-      font-size: 0.72em;
-      opacity: 0.95;
-    }
-  </style>
   <!-- PAGE 1: LEADERBOARD -->
   <div class="page active" id="page-leaderboard">
     <h1 class="page-title">Order of Merit Leaderboard</h1>
@@ -828,18 +816,7 @@
     <div id="scores-content"></div>
   </div>
 
-  <!-- PAGE 3: COMPETITION SCORES -->
-  <div class="page" id="page-competition-scores">
-    <h1 class="page-title">Competition Scores</h1>
-    <p class="page-subtitle">Select a competition to view scores in order</p>
-    <div class="round-selectors">
-      <label>Competition:</label>
-      <select class="styled-select" id="competition-score-select"></select>
-    </div>
-    <div id="competition-score-content"></div>
-  </div>
-
-  <!-- PAGE 4: ROUND DETAILS -->
+  <!-- PAGE 3: ROUND DETAILS -->
   <div class="page" id="page-round">
     <h1 class="page-title">Round Details</h1>
     <p class="page-subtitle">Hole-by-hole scorecard for a round</p>
@@ -853,134 +830,45 @@
     <div id="round-scorecard"></div>
   </div>
 </main>
-<!-- FOOTER -->
 <footer>
   <div class="footer-wave">
     <p class="footer-text">Leyland Golf Club &nbsp;·&nbsp; Order of Merit 2024 &nbsp;·&nbsp; Est. 1920</p>
   </div>
 </footer>
 
+
 <script>
   let data = null;
-
-  const PAGE_QUERY_KEYS = {
-    leaderboard: 'leaderboard',
-    scores: 'scores',
-    'competition-scores': 'competition',
-    round: 'round'
-  };
-
-  function parseCompetitionId(value) {
-    if (value == null || value === '') return null;
-    const id = parseInt(value, 10);
-    return Number.isNaN(id) ? null : id;
-  }
-
-  function getCompetitionIdFromUrl() {
-    return parseCompetitionId(new URLSearchParams(window.location.search).get('competition'));
-  }
-
-  function getPageIdFromUrl() {
-    const page = new URLSearchParams(window.location.search).get('page');
-    if (!page) {
-      return getCompetitionIdFromUrl() ? 'competition-scores' : 'leaderboard';
-    }
-    const map = {
-      leaderboard: 'leaderboard',
-      scores: 'scores',
-      competition: 'competition-scores',
-      'competition-scores': 'competition-scores',
-      round: 'round'
-    };
-    return map[page] || 'leaderboard';
-  }
-
-  function buildPageUrl(pageId, competitionId) {
-    const params = new URLSearchParams();
-    const pageKey = PAGE_QUERY_KEYS[pageId];
-    if (pageKey && pageKey !== 'leaderboard') params.set('page', pageKey);
-    if (pageId === 'competition-scores' && competitionId != null) {
-      params.set('competition', String(competitionId));
-    }
-    const qs = params.toString();
-    return qs ? (window.location.pathname + '?' + qs) : window.location.pathname;
-  }
-
-  function syncUrl(pageId, competitionId, replace) {
-    const url = buildPageUrl(pageId, competitionId);
-    const state = { page: pageId, competition: competitionId };
-    if (replace) {
-      history.replaceState(state, '', url);
-    } else {
-      history.pushState(state, '', url);
-    }
-  }
-
-  function showPage(pageId, options) {
-    const opts = options || {};
-    const navLinks = document.querySelectorAll('nav a');
-    const pages = document.querySelectorAll('.page');
-    navLinks.forEach(link => {
-      link.classList.toggle('active', link.dataset.page === pageId);
-    });
-    pages.forEach(p => p.classList.remove('active'));
-    const pageEl = document.getElementById('page-' + pageId);
-    if (pageEl) pageEl.classList.add('active');
-
-    if (opts.updateUrl === false) return;
-
-    let competitionId = null;
-    if (pageId === 'competition-scores') {
-      competitionId = opts.competitionId != null
-        ? opts.competitionId
-        : parseCompetitionId(document.getElementById('competition-score-select')?.value);
-    }
-    syncUrl(pageId, competitionId, !!opts.replaceUrl);
-  }
-
-  function applyRouteFromUrl() {
-    const pageId = getPageIdFromUrl();
-    showPage(pageId, { updateUrl: false });
-    if (pageId === 'competition-scores' && window.updateCompetitionScoresTable) {
-      window.updateCompetitionScoresTable(getCompetitionIdFromUrl());
-    }
-  }
 
   // Nav page switching (same as Leyland template)
   document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('nav a');
+    const pages = document.querySelectorAll('.page');
     navLinks.forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault();
         const target = this.dataset.page;
-        showPage(target);
-        if (target === 'competition-scores' && window.updateCompetitionScoresTable) {
-          window.updateCompetitionScoresTable(getCompetitionIdFromUrl());
-        }
+        navLinks.forEach(l => l.classList.remove('active'));
+        pages.forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+        const pageEl = document.getElementById('page-' + target);
+        if (pageEl) pageEl.classList.add('active');
       });
     });
 
-    window.addEventListener('popstate', applyRouteFromUrl);
-
-    // Load data.json (cache-busted; website reads website/data.json only)
-    fetch('data.json?v=' + Date.now(), { cache: 'no-store' })
+    // Load data.json
+    fetch('data.json?v=' + Date.now())
       .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(json => {
         if (!json.overallLeaderboard || !json.competitions) throw new Error('Invalid data');
         data = json;
         renderLeaderboard();
         renderIndividualScores();
-        renderCompetitionScores();
         renderRoundDetails();
-        applyRouteFromUrl();
         if (json.lastUpdated) {
           const d = new Date(json.lastUpdated);
           const footer = document.querySelector('.footer-text');
-          const compCount = (json.competitions || []).length;
-          if (footer) {
-            footer.innerHTML += ' &nbsp;·&nbsp; Data: ' + d.toLocaleString()
-              + ' &nbsp;·&nbsp; ' + compCount + ' competitions';
-          }
+          if (footer) footer.innerHTML += ' &nbsp;·&nbsp; Last updated: ' + d.toLocaleDateString();
         }
       })
       .catch(err => {
@@ -1002,42 +890,23 @@
     if (!data || !data.overallLeaderboard) return;
     let html = '<table class="leaderboard-table"><thead><tr>';
     html += '<th class="center">Pos</th><th>Player</th><th class="center">Comps</th>';
-    html += '<th class="center score-total" title="Mean of each player’s best 8 rounds (by total points)">Average<span class="th-sub">(best 8 rounds)</span></th>';
-    html += '<th class="center" title="Sum of total points from those same best 8 rounds">Total pts<span class="th-sub">(best 8 rounds)</span></th>';
+    html += '<th class="center score-total">Total</th>';
     (data.competitions || []).forEach(c => { html += '<th class="center">' + (c.name || '') + '</th>'; });
     html += '</tr></thead><tbody>';
     data.overallLeaderboard.forEach(p => {
       html += '<tr><td class="center"><span class="pos-badge ' + posClass(p.position) + '">' + p.position + '</span></td>';
       html += '<td><span class="player-name">' + (p.playerName || '') + '</span></td>';
       html += '<td class="center">' + (p.competitions || 0) + '</td>';
-      html += '<td class="center score-total">' + (p.averageBestEight != null ? p.averageBestEight : (p.totalPoints || 0)) + '</td>';
-      html += '<td class="center">' + (p.totalPoints != null ? p.totalPoints : 0) + '</td>';
+      html += '<td class="center score-total">' + (p.totalPoints || 0) + '</td>';
       (data.competitions || []).forEach(c => {
         const score = (p.competitionScores && (p.competitionScores[c.id] ?? p.competitionScores[String(c.id)])) || '';
-        const scoring = Array.isArray(p.scoringCompetitions)
-          ? (p.scoringCompetitions.includes(c.id) || p.scoringCompetitions.includes(String(c.id)))
-          : true;
-        const hasScore = !(score === '' || score === null || score === undefined);
-        const cls = 'center score-cell' + ((!scoring && hasScore) ? ' non-scoring' : '');
-        html += '<td class="' + cls + '">' + score + '</td>';
+        html += '<td class="center score-cell">' + score + '</td>';
       });
       html += '</tr>';
     });
     html += '</tbody></table>';
     el.innerHTML = html;
   }
-
-  // Global helper: navigate from Individual Scores to Round Details
-  // for a specific player + competition.
-  window.goToRoundDetails = function(playerId, compId) {
-    window._pendingRoundSelection = { playerId, compId };
-    showPage('round');
-    const playerSelect = document.getElementById('round-player-select');
-    if (playerSelect) {
-      playerSelect.value = String(playerId);
-      playerSelect.dispatchEvent(new Event('change'));
-    }
-  };
 
   function renderIndividualScores() {
     const btnContainer = document.getElementById('player-buttons');
@@ -1062,7 +931,6 @@
         const entry = lb.find(e => e.playerId === pid || e.playerName === player.playerName);
         if (entry) {
           rounds.push({
-            compId: comp.id,
             compName: comp.name,
             stableford: entry.stableford,
             bonus: entry.bonus,
@@ -1076,28 +944,11 @@
       panelsHtml += '<div class="profile-meta"><span>Position: ' + (player.position || '') + '</span><span>Rounds: ' + (player.totalRounds || 0) + '</span></div></div></div>';
       panelsHtml += '<div class="profile-body"><table class="rounds-table"><thead><tr><th>Competition</th><th class="center">Stableford</th><th class="center">Bonus</th><th class="right">Total Pts</th></tr></thead><tbody>';
       rounds.forEach(r => {
-        const clickable = r.holeData && r.holeData.holes;
-        const cellClass = clickable ? 'right clickable-score' : 'right';
-        const attrs = clickable
-          ? ' class="' + cellClass + '" data-player-id="' + pid + '" data-comp-id="' + r.compId + '"'
-          : ' class="' + cellClass + '"';
-        panelsHtml += '<tr><td>' + (r.compName || '') + '</td><td class="center">' + (r.stableford || '') + '</td><td class="center">' + (r.bonus || '') + '</td><td' + attrs + '>' + (r.points || '') + '</td></tr>';
+        panelsHtml += '<tr><td>' + (r.compName || '') + '</td><td class="center">' + (r.stableford || '') + '</td><td class="center">' + (r.bonus || '') + '</td><td class="right"><span class="round-pts">' + (r.points || '') + '</span></td></tr>';
       });
       panelsHtml += '</tbody></table></div></div>';
     });
     contentEl.innerHTML = panelsHtml;
-
-    // Clicking a Total Pts score should navigate to Round Details for that round
-    document.querySelectorAll('.clickable-score').forEach(cell => {
-      cell.addEventListener('click', function() {
-        const playerId = parseInt(this.dataset.playerId, 10);
-        const compId = parseInt(this.dataset.compId, 10);
-        if (isNaN(playerId) || isNaN(compId)) return;
-        if (window.goToRoundDetails) {
-          window.goToRoundDetails(playerId, compId);
-        }
-      });
-    });
 
     document.querySelectorAll('.player-btn').forEach(btn => {
       btn.addEventListener('click', function() {
@@ -1108,77 +959,6 @@
         if (panel) panel.classList.add('active');
       });
     });
-  }
-
-  function renderCompetitionScores() {
-    const compSelect = document.getElementById('competition-score-select');
-    const contentEl = document.getElementById('competition-score-content');
-    if (!data || !data.competitions) return;
-
-    const competitions = (data.competitions || []).slice();
-    compSelect.innerHTML = competitions
-      .map(c => '<option value="' + c.id + '">' + (c.name || ('Competition ' + c.id)) + '</option>')
-      .join('');
-
-    function resolveCompetitionId(preferredId) {
-      if (preferredId != null) {
-        const match = competitions.find(c => c.id === preferredId);
-        if (match) return match.id;
-      }
-      const fromUrl = getCompetitionIdFromUrl();
-      if (fromUrl != null && competitions.some(c => c.id === fromUrl)) return fromUrl;
-      return competitions.length ? competitions[0].id : null;
-    }
-
-    window.updateCompetitionScoresTable = function(preferredId) {
-      const compId = resolveCompetitionId(preferredId);
-      if (compId == null) {
-        contentEl.innerHTML = '<p style="padding:20px;color:#555;">No competitions found.</p>';
-        return;
-      }
-
-      compSelect.value = String(compId);
-      const selectedCompetition = competitions.find(c => c.id === compId);
-      const sortedLeaderboard = (selectedCompetition.leaderboard || [])
-        .slice()
-        .sort((a, b) => {
-          if ((b.points || 0) !== (a.points || 0)) return (b.points || 0) - (a.points || 0);
-          if ((b.stableford || 0) !== (a.stableford || 0)) return (b.stableford || 0) - (a.stableford || 0);
-          return (a.playerName || '').localeCompare(b.playerName || '');
-        });
-
-      let html = '<table class="rounds-table"><thead><tr>';
-      html += '<th class="center">Pos</th><th>Player</th><th class="center">Score</th><th class="center">Bonus</th><th class="right">Total Score</th>';
-      html += '</tr></thead><tbody>';
-
-      sortedLeaderboard.forEach((entry, index) => {
-        html += '<tr>';
-        html += '<td class="center">' + (index + 1) + '</td>';
-        html += '<td>' + (entry.playerName || '') + '</td>';
-        html += '<td class="center">' + (entry.stableford != null ? entry.stableford : 0) + '</td>';
-        html += '<td class="center">' + (entry.bonus != null ? entry.bonus : 0) + '</td>';
-        html += '<td class="right"><strong style="color:var(--red)">' + (entry.points != null ? entry.points : 0) + '</strong></td>';
-        html += '</tr>';
-      });
-
-      if (!sortedLeaderboard.length) {
-        html += '<tr><td colspan="5" style="text-align:center;color:#555;padding:20px;">No scores available for this competition.</td></tr>';
-      }
-
-      html += '</tbody></table>';
-      contentEl.innerHTML = html;
-
-      if (getPageIdFromUrl() === 'competition-scores') {
-        syncUrl('competition-scores', compId, true);
-      }
-    };
-
-    compSelect.addEventListener('change', function() {
-      const compId = parseCompetitionId(this.value);
-      window.updateCompetitionScoresTable(compId);
-    });
-
-    window.updateCompetitionScoresTable(getCompetitionIdFromUrl());
   }
 
   function renderRoundDetails() {
@@ -1209,39 +989,22 @@
       });
     });
 
-    function fillRoundDropdownForPlayer(playerId, preferredCompId) {
+    function fillRoundDropdownForPlayer(playerId) {
       const playerRounds = roundOptions.map((r, i) => ({ round: r, index: i })).filter(x => x.round.playerId === playerId);
       roundSelect.innerHTML = playerRounds.map(pr =>
         '<option value="' + pr.index + '">' + pr.round.compName + (pr.round.holeData.date ? ' — ' + pr.round.holeData.date : '') + '</option>'
       ).join('');
-      // Choose preferred comp if provided, otherwise first
-      if (!playerRounds.length) return -1;
-      if (preferredCompId) {
-        const match = playerRounds.find(pr => pr.round.compId === preferredCompId);
-        return match ? match.index : playerRounds[0].index;
-      }
-      return playerRounds[0].index;
+      return playerRounds.length > 0 ? playerRounds[0].index : -1;
     }
 
     function updateRoundDisplay() {
       const playerId = parseInt(playerSelect.value, 10);
-      const pending = window._pendingRoundSelection || null;
-      const preferredCompId = pending && pending.playerId === playerId ? pending.compId : null;
       const roundIdx = parseInt(roundSelect.value, 10);
       let round = roundOptions[roundIdx];
-      if (!round || round.playerId !== playerId || (preferredCompId && round.compId !== preferredCompId)) {
-        const idx = fillRoundDropdownForPlayer(playerId, preferredCompId);
-        if (idx >= 0) {
-          roundSelect.value = idx;
-          round = roundOptions[idx];
-        } else {
-          scorecardEl.innerHTML = '<p style="padding:20px;color:#555;">No hole-by-hole data for this player.</p>';
-          return;
-        }
-        // Clear pending selection once applied
-        if (pending && preferredCompId) {
-          window._pendingRoundSelection = null;
-        }
+      if (!round || round.playerId !== playerId) {
+        const firstIdx = fillRoundDropdownForPlayer(playerId);
+        if (firstIdx >= 0) { roundSelect.value = firstIdx; round = roundOptions[firstIdx]; }
+        else { scorecardEl.innerHTML = '<p style="padding:20px;color:#555;">No hole-by-hole data for this player.</p>'; return; }
       }
       const h = round.holeData;
       infoGrid.innerHTML = '<div class="info-card"><div class="info-label">Player</div><div class="info-value">' + round.playerName + '</div></div>';
