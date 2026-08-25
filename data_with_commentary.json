@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-22T20:48:25.940045",
+  "lastUpdated": "2026-08-25T18:20:51.067199",
   "overallLeaderboard": [
     {
       "playerName": "Neil Hodgson",
@@ -1103,7 +1103,221 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Carlton Cup - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Craig Harrison stormed to victory with 42 points, proving that even two blobs cannot stop a determined golfer\u2014or perhaps simply one with an excellent calculator. Behind him, the field produced everything from heroic front-nine fireworks to a back-nine disappearance worthy of a magic show.",
+        "playerCommentary": [
+          {
+            "playerName": "Craig Harrison",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 42,
+            "frontNine": 15,
+            "backNine": 17,
+            "blobHoles": [
+              2,
+              8
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig collected the Carlton Cup with 42 points, shrugging off blobs on holes 2 and 8 like minor administrative errors. A composed performance from the season\u2019s third-ranked player, and a timely reminder that consistency is occasionally more useful than excuses."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 38,
+            "frontNine": 16,
+            "backNine": 14,
+            "blobHoles": [],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin finished second with 38 points and, impressively, left every blob safely in the clubhouse. The season\u2019s sixth-ranked player delivered a clean, tidy round\u2014more spreadsheet than sitcom, but highly effective."
+          },
+          {
+            "playerName": "Adam Shepherd",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 36,
+            "frontNine": 20,
+            "backNine": 10,
+            "blobHoles": [
+              12,
+              16,
+              17,
+              18
+            ],
+            "seasonPosition": 5,
+            "seasonAverageBestEight": 38.12,
+            "summary": "Adam\u2019s front nine was positively volcanic, producing 20 points before the back nine staged a dramatic four-hole vanishing act. Blobs on 12, 16, 17 and 18 turned a potential triumph into third place and a strong case for ending the round at the turn."
+          },
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 32,
+            "frontNine": 10,
+            "backNine": 18,
+            "blobHoles": [
+              1,
+              2,
+              8
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 36.0,
+            "summary": "Paul began with a chilly 10 points before discovering the accelerator and charging home with 18. Three blobs on 1, 2 and 8 were apparently just warm-up exercises for a spirited fourth-place finish."
+          },
+          {
+            "playerName": "Matthew Cragg",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 30,
+            "frontNine": 15,
+            "backNine": 13,
+            "blobHoles": [
+              7
+            ],
+            "seasonPosition": 4,
+            "seasonAverageBestEight": 38.38,
+            "summary": "Matthew posted a respectable 30 points with only one blob, on hole 7, where the course briefly demanded an explanation. The season\u2019s fourth-ranked player was steady rather than spectacular, which is golf\u2019s polite way of saying \u2018solid, but bring snacks next time.\u2019"
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 27,
+            "frontNine": 14,
+            "backNine": 13,
+            "blobHoles": [
+              4,
+              10,
+              13
+            ],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph kept things admirably balanced with 14 points out and 13 back, finishing on 27. Blobs at 4, 10 and 13 prevented a higher climb, but the season\u2019s eighth-ranked player still delivered a respectable afternoon\u2019s work."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": 7,
+            "position": 7,
+            "totalPoints": 25,
+            "frontNine": 13,
+            "backNine": 12,
+            "blobHoles": [
+              4,
+              17
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee\u2019s 25 points came with a neat 13-12 split and only two blobs, on 4 and 17. A perfectly serviceable round from the season\u2019s 11th-ranked player\u2014less fireworks, more dependable garden lantern."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": 8,
+            "position": 8,
+            "totalPoints": 25,
+            "frontNine": 14,
+            "backNine": 11,
+            "blobHoles": [
+              1,
+              11,
+              13,
+              18
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony matched Lee\u2019s 25 points but took the scenic route, fading from 14 on the front to 11 on the back. Four blobs\u20141, 11, 13 and 18\u2014suggest the scorecard had several opinions of its own."
+          },
+          {
+            "playerName": "Mark Heron",
+            "playerId": 9,
+            "position": 9,
+            "totalPoints": 24,
+            "frontNine": 13,
+            "backNine": 11,
+            "blobHoles": [
+              1,
+              4,
+              9,
+              12,
+              13,
+              14
+            ],
+            "seasonPosition": 19,
+            "seasonAverageBestEight": 26.83,
+            "summary": "Mark carded 24 points, with a respectable 13 on the front before the back nine became a small committee of disappointments. Six blobs across 1, 4, 9, 12, 13 and 14 made ninth place feel like a victory over paperwork."
+          },
+          {
+            "playerName": "Terry Battersby",
+            "playerId": 10,
+            "position": 10,
+            "totalPoints": 20,
+            "frontNine": 10,
+            "backNine": 10,
+            "blobHoles": [
+              4,
+              7,
+              8,
+              9,
+              10,
+              12,
+              16
+            ],
+            "seasonPosition": 18,
+            "seasonAverageBestEight": 28.75,
+            "summary": "Terry achieved perfect symmetry with 10 points on each nine, though the seven blobs suggest symmetry was not the only theme. Holes 4, 7, 8, 9, 10, 12 and 16 hosted a full-scale points evacuation."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": 11,
+            "position": 11,
+            "totalPoints": 19,
+            "frontNine": 5,
+            "backNine": 14,
+            "blobHoles": [
+              1,
+              3,
+              8,
+              9,
+              18
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc found only 5 points on the front nine, then rallied magnificently with 14 on the back, suggesting someone finally located the correct set of instructions. Blobs on 1, 3, 8, 9 and 18 kept him to 19, but the comeback deserved its own tiny parade."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": 12,
+            "position": 12,
+            "totalPoints": 5,
+            "frontNine": 5,
+            "backNine": 0,
+            "blobHoles": [
+              2,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony\u2019s round began with 5 points and then entered witness protection, with a blank back nine and blobs from 2 through 18 apart from the early survivors. The season\u2019s 12th-ranked player will surely view this as a bold experiment in minimalist scoring."
+          }
+        ]
+      }
     },
     {
       "id": 10687,
@@ -1397,7 +1611,138 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Michael Blair Memorial - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Graham Haydock stormed to 47 points and won the Michael Blair Memorial by a margin that suggests someone had secretly fitted his clubs with cheat codes. Stephen Murphy was a clear second, while the season-leading Neil Hodgson endured a distinctly un-leaderboard-like afternoon, proving golf remains committed to chaos.",
+        "playerCommentary": [
+          {
+            "playerName": "Graham Haydock",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 47,
+            "frontNine": 17,
+            "backNine": 20,
+            "blobHoles": [
+              16
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham produced a magnificent 47 points, finishing strongly with 20 on the back nine and turning the competition into a polite procession. A single blob on 16 was merely a tiny smudge on an otherwise glittering scorecard."
+          },
+          {
+            "playerName": "Stephen Murphy",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 41,
+            "frontNine": 16,
+            "backNine": 17,
+            "blobHoles": [],
+            "seasonPosition": 7,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Stephen carded a tidy 41 points with no blobs at all, demonstrating the ancient and highly underrated art of playing every hole. He could not quite catch Graham, but secured second place with the calm efficiency of a man who had read the rulebook."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 34,
+            "frontNine": 14,
+            "backNine": 14,
+            "blobHoles": [
+              3,
+              16
+            ],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph finished third with 34 points, maintaining perfect numerical symmetry with 14 on both halves. Holes 3 and 16 declined to cooperate, but the rest of the course was sufficiently diplomatic to deliver a podium finish."
+          },
+          {
+            "playerName": "Matthew Cragg",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 31,
+            "frontNine": 19,
+            "backNine": 8,
+            "blobHoles": [
+              11,
+              12,
+              18
+            ],
+            "seasonPosition": 4,
+            "seasonAverageBestEight": 38.38,
+            "summary": "Matthew erupted for 19 points on the front nine, then apparently reached the turn and discovered the back nine had a personal grudge. Three blobs on 11, 12 and 18 completed the dramatic plot twist, leaving him fourth on 31."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 28,
+            "frontNine": 12,
+            "backNine": 14,
+            "blobHoles": [
+              2,
+              3,
+              6,
+              16
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee gathered 28 points and improved slightly after the turn, suggesting the back nine at least offered a less hostile welcome. Four blobs on 2, 3, 6 and 16 were the scorecard equivalent of leaving several unread messages."
+          },
+          {
+            "playerName": "Terry Battersby",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 26,
+            "frontNine": 11,
+            "backNine": 15,
+            "blobHoles": [
+              1,
+              9,
+              13,
+              16
+            ],
+            "seasonPosition": 18,
+            "seasonAverageBestEight": 28.75,
+            "summary": "Terry finished with 26 points, but a useful 15 on the back nine showed the engine eventually warmed up. Blobs on 1, 9, 13 and 16 suggest the opening, closing and several bits in between could use a committee review."
+          },
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": 7,
+            "position": 7,
+            "totalPoints": 26,
+            "frontNine": 15,
+            "backNine": 11,
+            "blobHoles": [
+              8,
+              12,
+              17,
+              18
+            ],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Neil, the season leader, arrived with a 43.0 best-eight average and left with 26 points, confirming that golf enjoys a well-timed surprise. A strong 15 on the front nine faded into 11 on the back, with blobs on 8, 12, 17 and 18 providing an especially unhelpful finale."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": 8,
+            "position": 8,
+            "totalPoints": 24,
+            "frontNine": 16,
+            "backNine": 8,
+            "blobHoles": [
+              12,
+              13,
+              17
+            ],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony made a lively start with 16 points on the front nine, then the back nine apparently changed the terms and offered only 8. Blobs on 12, 13 and 17 made the second half a difficult negotiation, but 24 points still secured a place in the official roll call."
+          }
+        ]
+      }
     },
     {
       "id": 10688,
@@ -1943,7 +2288,256 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Men's Jubilee Cup - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Lee Smith stormed to 46 points and lifted the Jubilee Cup, proving that even three blobs can be merely decorative when the rest of the card is doing the heavy lifting. Graham Haydock finished runner-up with 44, while the rest of the field battled bravely, occasionally heroically, and in a few cases with the scorecard apparently upside down.",
+        "playerCommentary": [
+          {
+            "playerName": "Lee Smith",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 46,
+            "frontNine": 18,
+            "backNine": 18,
+            "blobHoles": [
+              8,
+              13,
+              15
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee took the Jubilee Cup with a magnificent 46 points, remaining perfectly balanced with 18 on each nine. Three blobs on 8, 13 and 15 were apparently just tactical pauses before he resumed his march to glory."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 44,
+            "frontNine": 19,
+            "backNine": 17,
+            "blobHoles": [
+              3,
+              18
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham produced a highly respectable 44 points, with a front-nine flourish of 19 setting the tone. The blobs on 3 and 18 were small dents in an otherwise silver-medal performance from the season's number two."
+          },
+          {
+            "playerName": "James Murphy",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 41,
+            "frontNine": 17,
+            "backNine": 18,
+            "blobHoles": [
+              2,
+              7,
+              17
+            ],
+            "seasonPosition": 17,
+            "seasonAverageBestEight": 30.43,
+            "summary": "James delivered 41 points to claim third, finishing strongly with 18 on the back nine. Blobs on 2, 7 and 17 failed to derail him, proving that a few golfing potholes cannot stop a determined podium charge."
+          },
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 38,
+            "frontNine": 18,
+            "backNine": 16,
+            "blobHoles": [
+              11,
+              17
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 36.0,
+            "summary": "Paul P Hughes posted 38 points, building a solid platform with 18 on the front nine. Two blobs on 11 and 17 made the card briefly grumpy, but fourth place remained safely in the luggage."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 34,
+            "frontNine": 17,
+            "backNine": 15,
+            "blobHoles": [
+              18
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc collected 34 points and looked nicely settled until the final hole decided to add a blob to the scrapbook. With 17 out and 15 back, fifth place was a respectable result, even if 18 had other plans."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 31,
+            "frontNine": 14,
+            "backNine": 17,
+            "blobHoles": [
+              3,
+              6,
+              15
+            ],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony found his rhythm after the turn, improving from 14 on the front to 17 on the back. Blobs on 3, 6 and 15 were unwanted guests, but a sixth-place finish still gave them a polite escort off the premises."
+          },
+          {
+            "playerName": "Stephen Murphy",
+            "playerId": 7,
+            "position": 7,
+            "totalPoints": 31,
+            "frontNine": 14,
+            "backNine": 17,
+            "blobHoles": [
+              6,
+              8,
+              15
+            ],
+            "seasonPosition": 7,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Stephen matched Tony's 31 points and mirrored the same 14-to-17 recovery pattern. The blobs on 6, 8 and 15 clearly formed a small committee, but they could not prevent seventh place."
+          },
+          {
+            "playerName": "Craig Harrison",
+            "playerId": 8,
+            "position": 8,
+            "totalPoints": 30,
+            "frontNine": 15,
+            "backNine": 15,
+            "blobHoles": [
+              2,
+              18
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig posted a beautifully symmetrical 15 and 15, although symmetry is not quite the same as fireworks. Blobs on 2 and 18 bookended a 30-point round that landed him in eighth, despite his lofty season standing."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": 9,
+            "position": 9,
+            "totalPoints": 30,
+            "frontNine": 17,
+            "backNine": 13,
+            "blobHoles": [
+              2,
+              10,
+              13
+            ],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin was lively early with 17 on the front nine before the back nine reduced the volume to 13. Blobs on 2, 10 and 13 contributed to the cooling-off period, leaving him level on 30 and ninth overall."
+          },
+          {
+            "playerName": "Simon Parker",
+            "playerId": 10,
+            "position": 10,
+            "totalPoints": 29,
+            "frontNine": 18,
+            "backNine": 11,
+            "blobHoles": [
+              15,
+              16,
+              17,
+              18
+            ],
+            "seasonPosition": 16,
+            "seasonAverageBestEight": 32.5,
+            "summary": "Simon opened with an excellent 18, then staged a dramatic late collapse worthy of a four-hole mini-series. Blobs on 15, 16, 17 and 18 turned the back nine into a cautionary tale, but 29 points still secured tenth."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": 11,
+            "position": 11,
+            "totalPoints": 27,
+            "frontNine": 13,
+            "backNine": 14,
+            "blobHoles": [
+              3,
+              4,
+              8,
+              13,
+              14
+            ],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph edged upward from 13 to 14 across the nines, showing admirable late-round persistence. Five blobs on 3, 4, 8, 13 and 14 made the scorecard look like it had been visited by a small flock of geese, but he finished with 27."
+          },
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": 12,
+            "position": 12,
+            "totalPoints": 25,
+            "frontNine": 13,
+            "backNine": 12,
+            "blobHoles": [
+              6,
+              9,
+              11
+            ],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Neil, the season leader, endured a quieter Jubilee Cup with 25 points after posting 13 out and 12 back. Blobs on 6, 9 and 11 clearly failed to consult the league table before causing trouble."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": 13,
+            "position": 13,
+            "totalPoints": 25,
+            "frontNine": 13,
+            "backNine": 12,
+            "blobHoles": [
+              7,
+              11,
+              18
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony matched Neil's 25 points, with the same 13-to-12 pattern making this an unusually synchronized afternoon. Blobs on 7, 11 and 18 kept the round modest, but 13th place was at least numerically on brand with his season position."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": 14,
+            "position": 14,
+            "totalPoints": 22,
+            "frontNine": 13,
+            "backNine": 9,
+            "blobHoles": [
+              9,
+              10,
+              12,
+              15
+            ],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 33.62,
+            "summary": "Craig reached 13 on the front nine before the back nine delivered a rather stern nine-point reply. Blobs on 9, 10, 12 and 15 helped explain the turbulence, while 14th place aligned perfectly with his season position."
+          },
+          {
+            "playerName": "Terry Battersby",
+            "playerId": 15,
+            "position": 15,
+            "totalPoints": 21,
+            "frontNine": 10,
+            "backNine": 11,
+            "blobHoles": [
+              1,
+              4,
+              8,
+              13,
+              15,
+              16
+            ],
+            "seasonPosition": 18,
+            "seasonAverageBestEight": 28.75,
+            "summary": "Terry finished with 21 points and at least improved from 10 on the front to 11 on the back, which is progress in the correct direction. Six blobs on 1, 4, 8, 13, 15 and 16 made the card look busy, but he battled through to complete the field."
+          }
+        ]
+      }
     },
     {
       "id": 10689,
@@ -2417,7 +3011,203 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Men's Harry Parr Memorial - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Neil Hodgson produced a runaway 49-point masterclass, leaving the rest of the field scrambling for binoculars and an explanation. Colin Burgess and Craig Harrison filled the podium, while several contenders discovered that the back nine can be a wonderfully creative place to lose a golf tournament.",
+        "playerCommentary": [
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 49,
+            "frontNine": 20,
+            "backNine": 19,
+            "blobHoles": [],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Neil delivered a commanding 49-point victory with not a blob in sight, turning the Memorial into a personal procession. The season leader has now supplied a performance worthy of the billing\u2014and possibly a few awkward questions from the handicap committee."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 45,
+            "frontNine": 17,
+            "backNine": 20,
+            "blobHoles": [],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin was spotless and steadily formidable, finishing second with 45 points and a particularly tidy back nine. He may not have caught Neil, but he made sure the chasing pack had no chance of catching him."
+          },
+          {
+            "playerName": "Craig Harrison",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 41,
+            "frontNine": 16,
+            "backNine": 19,
+            "blobHoles": [],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig completed the podium with 41 points and the enviable distinction of avoiding every blob. A composed display from the season's third-ranked player, who kept the golfing gremlins firmly out of his bag."
+          },
+          {
+            "playerName": "Simon Parker",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 37,
+            "frontNine": 19,
+            "backNine": 14,
+            "blobHoles": [
+              9,
+              18
+            ],
+            "seasonPosition": 16,
+            "seasonAverageBestEight": 32.5,
+            "summary": "Simon launched brilliantly with 19 points on the front nine, then apparently decided the back nine had done enough for one day. Blobs at 9 and 18 bookended the drama, but 37 points still represented an excellent upgrade on his season ranking."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 33,
+            "frontNine": 16,
+            "backNine": 15,
+            "blobHoles": [],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony produced a clean card and a dependable 33-point effort, proving that quiet efficiency still has a place in modern golf. No blobs, no theatrics, just a steady march into fifth place."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 31,
+            "frontNine": 17,
+            "backNine": 14,
+            "blobHoles": [
+              11,
+              13,
+              18
+            ],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph made a bright start with 17 points before the back nine began issuing formal complaints. Blobs at 11, 13 and 18 trimmed the score to 31, but sixth place keeps the day from becoming a complete golfing courtroom drama."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": 7,
+            "position": 7,
+            "totalPoints": 30,
+            "frontNine": 14,
+            "backNine": 16,
+            "blobHoles": [
+              9
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee improved on the back nine and finished with 30 points, despite hole 9 briefly turning into a one-man escape-room challenge. A respectable seventh, with the scorecard only mildly peppered by trouble."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": 8,
+            "position": 8,
+            "totalPoints": 30,
+            "frontNine": 15,
+            "backNine": 15,
+            "blobHoles": [
+              2,
+              12
+            ],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 33.62,
+            "summary": "Craig split his round perfectly with 15 points on each nine, displaying admirable numerical symmetry. Holes 2 and 12 declined to participate in the harmony, but 30 points still secured a solid eighth."
+          },
+          {
+            "playerName": "Terry Battersby",
+            "playerId": 9,
+            "position": 9,
+            "totalPoints": 28,
+            "frontNine": 15,
+            "backNine": 13,
+            "blobHoles": [
+              12
+            ],
+            "seasonPosition": 18,
+            "seasonAverageBestEight": 28.75,
+            "summary": "Terry posted 28 points, almost exactly matching his season average and keeping the performance pleasingly on brand. A single blob at 12 was the only blemish in a round that arrived, did its job and went home."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": 10,
+            "position": 10,
+            "totalPoints": 28,
+            "frontNine": 18,
+            "backNine": 10,
+            "blobHoles": [
+              11,
+              17
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony stormed through the front nine with 18 points, then treated the back nine like an optional extra. Blobs at 11 and 17 helped reduce the second-half haul to 10, leaving him with 28 and a round of two very different moods."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": 11,
+            "position": 11,
+            "totalPoints": 28,
+            "frontNine": 11,
+            "backNine": 17,
+            "blobHoles": [
+              1,
+              2,
+              4,
+              6,
+              13
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc endured a front nine featuring four blobs before finding a much happier rhythm on the return journey. The back-nine recovery to 17 points was heroic, although the early damage had already filed the final score under 28."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": 12,
+            "position": 12,
+            "totalPoints": 27,
+            "frontNine": 12,
+            "backNine": 15,
+            "blobHoles": [
+              2,
+              3,
+              9
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham, the season's number two, found himself unusually tangled in the shrubbery of expectation, finishing with 27 points. Blobs at 2, 3 and 9 made the front nine a stern negotiation, though 15 on the back nine suggested the comeback committee had at least met."
+          },
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": 13,
+            "position": 13,
+            "totalPoints": 27,
+            "frontNine": 14,
+            "backNine": 13,
+            "blobHoles": [
+              3,
+              6,
+              11,
+              13,
+              17
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 36.0,
+            "summary": "Paul's 27 points came with blobs scattered across the card like someone had shaken a jar of golfing confetti. He kept the front and back nines reasonably close, but holes 3, 6, 11, 13 and 17 ensured the scorecard had plenty of plot."
+          }
+        ]
+      }
     },
     {
       "id": 10693,
@@ -2927,7 +3717,226 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Men's J J Mills Memorial - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Adam Shepherd claimed the Men's J J Mills Memorial with 45 points, proving that even a blob on the opening hole is merely a dramatic prologue. Graham Haydock chased hard on 43, while the field served up a lively mixture of heroic front nines, rebellious back nines and enough blobs to keep the scorecard emotionally invested.",
+        "playerCommentary": [
+          {
+            "playerName": "Adam Shepherd",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 45,
+            "frontNine": 15,
+            "backNine": 20,
+            "blobHoles": [
+              1
+            ],
+            "seasonPosition": 5,
+            "seasonAverageBestEight": 38.12,
+            "summary": "Adam took the title with 45 points, turning a blob on hole 1 into nothing more than an early plot twist. A back-nine surge to 20 points sealed the deal and showed that champions apparently enjoy saving their best work for when everyone else is checking the leaderboard."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 43,
+            "frontNine": 17,
+            "backNine": 18,
+            "blobHoles": [
+              6,
+              9,
+              11
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham finished runner-up with an excellent 43 points, maintaining the season form expected of the man sitting second overall. Three blobs on 6, 9 and 11 were minor hiccups, but he kept the engine running and made Adam work for the trophy."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 39,
+            "frontNine": 14,
+            "backNine": 19,
+            "blobHoles": [
+              1,
+              8
+            ],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 33.62,
+            "summary": "Craig stormed into third with 39 points, comfortably outperforming his season position and average. After blobs on 1 and 8 threatened to derail the expedition, he found an extra gear on the back nine and drove straight onto the podium."
+          },
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 37,
+            "frontNine": 19,
+            "backNine": 14,
+            "blobHoles": [
+              3,
+              11
+            ],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Neil, the season leader, posted 37 points and made the front nine his personal property with 19. Two blobs on 3 and 11 and a quieter back nine kept him just off the podium, but the overall-season boss remains very much in charge."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 35,
+            "frontNine": 19,
+            "backNine": 14,
+            "blobHoles": [
+              13,
+              15
+            ],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin matched Neil\u2019s front-nine fireworks with 19 points and finished fifth on 35. The back nine cooled slightly, with blobs on 13 and 15 adding a little unwanted seasoning to an otherwise solid round."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 32,
+            "frontNine": 15,
+            "backNine": 17,
+            "blobHoles": [
+              12
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony collected 32 points and quietly outperformed his season position, with the back nine providing the stronger act at 17 points. One blob on 12 was the only stain on a tidy card, and sixth place represents a respectable day at the office."
+          },
+          {
+            "playerName": "Simon Parker",
+            "playerId": 7,
+            "position": 7,
+            "totalPoints": 32,
+            "frontNine": 17,
+            "backNine": 15,
+            "blobHoles": [
+              4,
+              16
+            ],
+            "seasonPosition": 16,
+            "seasonAverageBestEight": 32.5,
+            "summary": "Simon matched Tony\u2019s 32 points and finished seventh, which is a considerable upgrade on his season position of 16. Blobs on 4 and 16 tried to sabotage the mission, but a strong front nine kept the scorecard smiling."
+          },
+          {
+            "playerName": "Stephen Murphy",
+            "playerId": 8,
+            "position": 8,
+            "totalPoints": 30,
+            "frontNine": 16,
+            "backNine": 14,
+            "blobHoles": [],
+            "seasonPosition": 7,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Stephen produced 30 points without recording a single blob, making him the clean-sheet champion of the day. The score was a little below his season average, but his card was tidier than a freshly ironed pair of golf trousers."
+          },
+          {
+            "playerName": "Craig Harrison",
+            "playerId": 9,
+            "position": 9,
+            "totalPoints": 30,
+            "frontNine": 16,
+            "backNine": 14,
+            "blobHoles": [
+              15
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig posted 30 points from ninth place, with a steady 16-front and 14-back split. A lone blob on 15 was the only obvious blemish, although the season number three will be eyeing a swift return to the sharper end of the leaderboard."
+          },
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": 10,
+            "position": 10,
+            "totalPoints": 29,
+            "frontNine": 14,
+            "backNine": 15,
+            "blobHoles": [
+              5,
+              8,
+              15
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 36.0,
+            "summary": "Paul P Hughes finished exactly where his season position says he belongs: tenth, with 29 points. Blobs on 5, 8 and 15 provided the comic relief, while a slightly better back nine suggested the round was at least ending with the right punchline."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": 11,
+            "position": 11,
+            "totalPoints": 27,
+            "frontNine": 16,
+            "backNine": 11,
+            "blobHoles": [
+              13,
+              15,
+              18
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee matched his season position in 11th with 27 points, after a promising 16-point front nine. The back nine became a three-blob soap opera on 13, 15 and 18, leaving the finish more dramatic than anyone had ordered."
+          },
+          {
+            "playerName": "Thomas Hall",
+            "playerId": 12,
+            "position": 12,
+            "totalPoints": 27,
+            "frontNine": 23,
+            "backNine": 4,
+            "blobHoles": [
+              11,
+              12,
+              13,
+              15,
+              16,
+              17
+            ],
+            "seasonPosition": 15,
+            "seasonAverageBestEight": 32.62,
+            "summary": "Thomas delivered a remarkable front-nine performance worth 23 points, then apparently left his golf on the turn and returned with just 4 on the back. Six blobs from 11 through 17 made the closing stretch less a round of golf and more an endurance event."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": 13,
+            "position": 13,
+            "totalPoints": 26,
+            "frontNine": 11,
+            "backNine": 15,
+            "blobHoles": [
+              1,
+              18
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc rallied from an 11-point front nine to a much healthier 15 on the back, finishing with 26 points. Blobs on the opening and closing holes gave the card neat bookends, although the middle chapters deserved a slightly happier ending."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": 14,
+            "position": 14,
+            "totalPoints": 24,
+            "frontNine": 14,
+            "backNine": 10,
+            "blobHoles": [
+              7,
+              17,
+              18
+            ],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph finished with 24 points after a respectable 14-point front nine, but the back nine slipped to 10. Blobs on 7, 17 and 18 ensured the round ended with a little theatrical tension, even if the leaderboard supplied the final plot twist."
+          }
+        ]
+      }
     },
     {
       "id": 10694,
@@ -3437,7 +4446,239 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Men's Ken Bretherton Trophy - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Paul P Hughes stormed to victory with 47 points, proving that sometimes the leaderboard enjoys a surprise ending more than a crime drama. Neil Hodgson and Graham Haydock had to settle for podium places, while Simon Parker bravely demonstrated that golf can, in fact, become a solo expedition into the wilderness.",
+        "playerCommentary": [
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": null,
+            "position": 1,
+            "totalPoints": 47,
+            "frontNine": 20,
+            "backNine": 17,
+            "blobHoles": [
+              14
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 36.0,
+            "summary": "Paul produced a trophy-winning 47 points, turning his season position of 10 into a victory lap of the highest order. Hole 14 was the only blot on an otherwise sparkling card, and even that blob clearly failed to get the memo about ruining the day."
+          },
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": null,
+            "position": 2,
+            "totalPoints": 42,
+            "frontNine": 18,
+            "backNine": 16,
+            "blobHoles": [],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Neil\u2019s 42 points and blob-free round were thoroughly respectable, although Paul\u2019s surprise charge meant respectability had to make do with second place. As season number one, he remains the man to beat\u2014just not on this particular leaderboard."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": null,
+            "position": 3,
+            "totalPoints": 40,
+            "frontNine": 18,
+            "backNine": 16,
+            "blobHoles": [
+              8
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham banked 40 points to claim third, maintaining his season-long reputation as a regular visitor to the sharp end. Hole 8 briefly staged a rebellion, but the rest of the card kept it firmly under control."
+          },
+          {
+            "playerName": "Stephen Murphy",
+            "playerId": null,
+            "position": 4,
+            "totalPoints": 37,
+            "frontNine": 17,
+            "backNine": 16,
+            "blobHoles": [],
+            "seasonPosition": 7,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Stephen matched his season average territory with a tidy 37 points and no blobs to spoil the paperwork. Fourth place may lack a podium, but it comes with the comforting knowledge that the scorecard behaved itself."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": null,
+            "position": 5,
+            "totalPoints": 35,
+            "frontNine": 20,
+            "backNine": 13,
+            "blobHoles": [
+              16
+            ],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony\u2019s front-nine 20 suggested a serious trophy assault, but the back-nine 13 changed the plot from epic to respectable. Hole 16 added a blob for dramatic effect, while the final 35 points landed exactly on his season average."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": null,
+            "position": 6,
+            "totalPoints": 33,
+            "frontNine": 17,
+            "backNine": 16,
+            "blobHoles": [
+              13,
+              18
+            ],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin finished sixth with 33 points, neatly matching his season position but leaving a little daylight between himself and his usual average. Holes 13 and 18 teamed up for blobs, presumably in an attempt to make the finish more memorable."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": null,
+            "position": 7,
+            "totalPoints": 31,
+            "frontNine": 17,
+            "backNine": 14,
+            "blobHoles": [],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 33.62,
+            "summary": "Craig carded 31 points without a single blob, offering a lesson in quiet efficiency even if the leaderboard did not provide a standing ovation. From season position 14 to seventh today, that is a respectable bit of upward mobility."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": null,
+            "position": 8,
+            "totalPoints": 29,
+            "frontNine": 12,
+            "backNine": 17,
+            "blobHoles": [
+              1,
+              3,
+              18
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony saved his best work for the back nine, recovering from a front-nine 12 with a much healthier 17. Blobs on 1, 3 and 18 bookended the adventure, but 29 points still carried him to eighth."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": null,
+            "position": 9,
+            "totalPoints": 28,
+            "frontNine": 14,
+            "backNine": 14,
+            "blobHoles": [
+              8,
+              9,
+              11
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc delivered a perfectly symmetrical 14 and 14, proving that balance is possible even when the points are not especially generous. Holes 8, 9 and 11 formed a small blob convention, and ninth place matched his season position with suspicious precision."
+          },
+          {
+            "playerName": "Matthew Cragg",
+            "playerId": null,
+            "position": 10,
+            "totalPoints": 27,
+            "frontNine": 11,
+            "backNine": 16,
+            "blobHoles": [
+              3,
+              7,
+              11
+            ],
+            "seasonPosition": 4,
+            "seasonAverageBestEight": 38.38,
+            "summary": "Matthew\u2019s back-nine 16 showed the fight was still alive after a front-nine 11 had put it on life support. Blobs on 3, 7 and 11 kept the score to 27, well below the lofty standards of his season position and average."
+          },
+          {
+            "playerName": "Adam Shepherd",
+            "playerId": null,
+            "position": 11,
+            "totalPoints": 26,
+            "frontNine": 16,
+            "backNine": 10,
+            "blobHoles": [
+              4,
+              11,
+              12,
+              17
+            ],
+            "seasonPosition": 5,
+            "seasonAverageBestEight": 38.12,
+            "summary": "Adam began with a promising 16 on the front nine, before the back nine produced a rather less cooperative 10. Four blobs on 4, 11, 12 and 17 made sure this was a day of character-building rather than trophy polishing."
+          },
+          {
+            "playerName": "Mark Heron",
+            "playerId": null,
+            "position": 12,
+            "totalPoints": 25,
+            "frontNine": 13,
+            "backNine": 12,
+            "blobHoles": [
+              1,
+              2,
+              4,
+              16,
+              17,
+              18
+            ],
+            "seasonPosition": 19,
+            "seasonAverageBestEight": 26.83,
+            "summary": "Mark collected 25 points and finished just below his season average, but did manage to beat his season position comfortably. Six blobs\u2014including a grand finale across 16, 17 and 18\u2014suggest the closing holes held a particularly firm grudge."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": null,
+            "position": 13,
+            "totalPoints": 23,
+            "frontNine": 11,
+            "backNine": 12,
+            "blobHoles": [
+              3,
+              4,
+              6,
+              14,
+              15
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee\u2019s 23 points came via a modest 11 out and 12 back, with blobs on 3, 4, 6, 14 and 15 providing unwanted punctuation. Thirteenth place was a tougher chapter than his season position suggested, but every golf story needs a plot twist."
+          },
+          {
+            "playerName": "Simon Parker",
+            "playerId": null,
+            "position": 14,
+            "totalPoints": 1,
+            "frontNine": 1,
+            "backNine": 0,
+            "blobHoles": [
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "seasonPosition": 16,
+            "seasonAverageBestEight": 32.5,
+            "summary": "Simon\u2019s one point was less a round of golf and more an extended negotiation with the scorecard, which ultimately conceded a single point out of pity or paperwork. Every hole from 1 through 18 became a blob, making this a performance of astonishing consistency, if not the useful kind."
+          }
+        ]
+      }
     },
     {
       "id": 10695,
@@ -3947,7 +5188,218 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Men's Club Cup - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Neil Hodgson lifted the cup with a commanding 47 points, proving that even eight blobs cannot derail a champion. Graham Haydock applied pressure in second, while Lee Smith stormed into third and several seasoned campaigners discovered that golf occasionally rewards chaos over credentials.",
+        "playerCommentary": [
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": null,
+            "position": 1,
+            "totalPoints": 47,
+            "frontNine": 18,
+            "backNine": 19,
+            "blobHoles": [
+              8
+            ],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Neil collected 47 points and the trophy, which is generally considered a strong way to spend an afternoon. The blob on hole 8 was merely a dramatic subplot in an otherwise championship-worthy performance."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": null,
+            "position": 2,
+            "totalPoints": 44,
+            "frontNine": 20,
+            "backNine": 16,
+            "blobHoles": [
+              8
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham piled up 44 points and pushed Neil all the way, though the back nine evidently preferred a quieter approach. Hole 8 joined Neil in the blob club, but second place remains an excellent consolation prize and a useful warning shot."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": null,
+            "position": 3,
+            "totalPoints": 41,
+            "frontNine": 15,
+            "backNine": 20,
+            "blobHoles": [
+              2
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee produced the round's great plot twist, leaping from season 11th to the podium with 41 points. After a modest front nine, he turned on the afterburners on the back and left hole 2 as the lone witness to imperfection."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": null,
+            "position": 4,
+            "totalPoints": 37,
+            "frontNine": 20,
+            "backNine": 13,
+            "blobHoles": [
+              11,
+              12
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony's front-nine 20 suggested he was shopping for a podium finish, but the back nine apparently closed early. Holes 11 and 12 formed a short-lived disaster movie, yet 37 points still delivered a fine fourth."
+          },
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": null,
+            "position": 5,
+            "totalPoints": 33,
+            "frontNine": 15,
+            "backNine": 16,
+            "blobHoles": [
+              17
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 36.0,
+            "summary": "Paul posted a steady 33 points, with the front and back nines behaving like polite equals. Hole 17 tried to spoil the mood, but fifth place says the afternoon was more solid than spectacular."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": null,
+            "position": 6,
+            "totalPoints": 31,
+            "frontNine": 16,
+            "backNine": 15,
+            "blobHoles": [
+              12
+            ],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph split his scoring almost perfectly, finishing with 31 points and a thoroughly balanced sixth place. Hole 12 was the only blot on the copybook, although it appears to have been written in particularly large ink."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": null,
+            "position": 7,
+            "totalPoints": 31,
+            "frontNine": 16,
+            "backNine": 15,
+            "blobHoles": [],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin matched Joseph's 31 points without recording a single blob, which is the golfing equivalent of keeping the kitchen tidy during a dinner party. The reward was seventh place: tidy, respectable and perhaps slightly underappreciated."
+          },
+          {
+            "playerName": "James Murphy",
+            "playerId": null,
+            "position": 8,
+            "totalPoints": 31,
+            "frontNine": 18,
+            "backNine": 13,
+            "blobHoles": [
+              7,
+              13
+            ],
+            "seasonPosition": 17,
+            "seasonAverageBestEight": 30.43,
+            "summary": "James reached 31 points and comfortably outperformed his season position, making this a very welcome plot twist. Holes 7 and 13 contributed blobs, while the front nine did most of the heavy lifting before the back nine wandered off."
+          },
+          {
+            "playerName": "Craig Harrison",
+            "playerId": null,
+            "position": 9,
+            "totalPoints": 31,
+            "frontNine": 20,
+            "backNine": 11,
+            "blobHoles": [
+              14,
+              15
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig matched the 31-point crowd after a brilliant front-nine 20, then suffered a back-nine performance best described as an abrupt change of management. Holes 14 and 15 teamed up for blobs, leaving the season's third-ranked player in ninth on the day."
+          },
+          {
+            "playerName": "Thomas Hall",
+            "playerId": null,
+            "position": 10,
+            "totalPoints": 30,
+            "frontNine": 14,
+            "backNine": 16,
+            "blobHoles": [
+              17
+            ],
+            "seasonPosition": 15,
+            "seasonAverageBestEight": 32.62,
+            "summary": "Thomas improved on the back nine to finish with 30 points, proving that the round was not going to be surrendered without a polite argument. Hole 17 was the sole blob, and tenth place represents a respectable climb from season 15th."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": null,
+            "position": 11,
+            "totalPoints": 30,
+            "frontNine": 18,
+            "backNine": 12,
+            "blobHoles": [
+              8,
+              17,
+              18
+            ],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 33.62,
+            "summary": "Craig's 18-point front nine promised a grand finale, but the back nine opted for a much shorter encore. Blobs on 8, 17 and 18 made sure the scorecard had plenty of punctuation, with 30 points still securing 11th."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": null,
+            "position": 12,
+            "totalPoints": 29,
+            "frontNine": 14,
+            "backNine": 15,
+            "blobHoles": [
+              16
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc edged upward from 14 front-nine points to 15 on the back, finishing with 29 and the sort of steady rhythm golf commentators call promising. Hole 16 supplied the only blob, though the scorecard ultimately preferred understatement."
+          },
+          {
+            "playerName": "Simon Parker",
+            "playerId": null,
+            "position": 13,
+            "totalPoints": 29,
+            "frontNine": 15,
+            "backNine": 14,
+            "blobHoles": [
+              18
+            ],
+            "seasonPosition": 16,
+            "seasonAverageBestEight": 32.5,
+            "summary": "Simon posted 29 points in a closely fought round, with the front nine narrowly beating the back nine. Hole 18 added a final blob for dramatic effect, but 13th still marks a handy step up from season 16th."
+          },
+          {
+            "playerName": "Mark Heron",
+            "playerId": null,
+            "position": 14,
+            "totalPoints": 24,
+            "frontNine": 14,
+            "backNine": 10,
+            "blobHoles": [
+              1,
+              3,
+              10,
+              13,
+              16,
+              18
+            ],
+            "seasonPosition": 19,
+            "seasonAverageBestEight": 26.83,
+            "summary": "Mark finished with 24 points after a front nine that showed promise before the back nine started collecting blobs like souvenirs. Holes 1, 3, 10, 13, 16 and 18 all made the list, but he still improved on his season position with 14th."
+          }
+        ]
+      }
     },
     {
       "id": 10696,
@@ -4493,7 +5945,238 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Men's George Butterfield - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Tony Wright stormed to victory with 47 points, proving that even three blobs can be merely decorative when the scoreboard is feeling generous. Graham Haydock and Adam Shepherd filled the podium, while the season leaders endured a day that can best be described as character-building.",
+        "playerCommentary": [
+          {
+            "playerName": "Tony Wright",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 47,
+            "frontNine": 17,
+            "backNine": 20,
+            "blobHoles": [
+              3,
+              4,
+              13
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony produced a winning 47 points, including a stronger back nine that left the chasing pack studying his tyre tracks. Three blobs on holes 3, 4 and 13 were apparently just strategic pauses before the victory lap."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 44,
+            "frontNine": 18,
+            "backNine": 18,
+            "blobHoles": [
+              4,
+              18
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham delivered a beautifully balanced 44, matching his front and back nines with the precision of a man who owns two identical halves. Blobs at 4 and 18 prevented the perfect fairy tale, but second place is still a very respectable sequel."
+          },
+          {
+            "playerName": "Adam Shepherd",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 42,
+            "frontNine": 19,
+            "backNine": 17,
+            "blobHoles": [
+              2,
+              17
+            ],
+            "seasonPosition": 5,
+            "seasonAverageBestEight": 38.12,
+            "summary": "Adam\u2019s 42 points earned him a podium finish after a particularly lively front nine of 19. Holes 2 and 17 briefly declined to cooperate, but the overall performance was still shepherding the field in the right direction."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 38,
+            "frontNine": 17,
+            "backNine": 17,
+            "blobHoles": [],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin posted 38 points with matching 17s, delivering the golfing equivalent of a dependable metronome. No blobs at all meant every hole contributed, even if none felt compelled to write a headline."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 36,
+            "frontNine": 22,
+            "backNine": 12,
+            "blobHoles": [
+              15,
+              18
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc set the course alight with a spectacular 22 on the front nine, then apparently decided the back nine had had enough excitement. Blobs on 15 and 18 completed a 36-point round with a dramatic change of genre after the turn."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 33,
+            "frontNine": 19,
+            "backNine": 14,
+            "blobHoles": [],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee\u2019s 33 points came without a single blob, which is the golfing equivalent of keeping all the plates spinning. A 19-point front nine gave him a strong platform, though the back nine quietly packed away 14."
+          },
+          {
+            "playerName": "James Murphy",
+            "playerId": 7,
+            "position": 7,
+            "totalPoints": 33,
+            "frontNine": 16,
+            "backNine": 17,
+            "blobHoles": [
+              8,
+              18
+            ],
+            "seasonPosition": 17,
+            "seasonAverageBestEight": 30.43,
+            "summary": "James improved from 16 to 17 after the turn and finished on 33, making the back nine his preferred department. Blobs at 8 and 18 were the only blemishes in a round that comfortably outperformed his season average."
+          },
+          {
+            "playerName": "Simon Parker",
+            "playerId": 8,
+            "position": 8,
+            "totalPoints": 32,
+            "frontNine": 15,
+            "backNine": 17,
+            "blobHoles": [
+              3
+            ],
+            "seasonPosition": 16,
+            "seasonAverageBestEight": 32.5,
+            "summary": "Simon found an extra gear after the turn, moving from 15 to 17 and finishing with 32 points. Hole 3 tried to spoil the party, but one blob is hardly enough to derail a respectable afternoon."
+          },
+          {
+            "playerName": "Craig Harrison",
+            "playerId": 9,
+            "position": 9,
+            "totalPoints": 32,
+            "frontNine": 18,
+            "backNine": 14,
+            "blobHoles": [
+              10
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig began with a useful 18 before the back nine applied the brakes, leaving him on 32 points. Hole 10 was the lone blob, but the bigger mystery is how a season-average powerhouse ended up in the middle of this particular scrum."
+          },
+          {
+            "playerName": "Stephen Murphy",
+            "playerId": 10,
+            "position": 10,
+            "totalPoints": 31,
+            "frontNine": 16,
+            "backNine": 15,
+            "blobHoles": [
+              8,
+              14
+            ],
+            "seasonPosition": 7,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Stephen carded 31 points in a steady 16-and-15 split, proving that consistency can also be mildly disappointing. Blobs at 8 and 14 were the unwanted guest appearances in an otherwise tidy production."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": 11,
+            "position": 11,
+            "totalPoints": 31,
+            "frontNine": 15,
+            "backNine": 16,
+            "blobHoles": [
+              2,
+              8,
+              17
+            ],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph edged upward after the turn, finishing with 31 points and a modest 15-to-16 improvement. Holes 2, 8 and 17 formed a troublesome little committee, but none could quite veto the round."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": 12,
+            "position": 12,
+            "totalPoints": 31,
+            "frontNine": 17,
+            "backNine": 14,
+            "blobHoles": [
+              13,
+              16,
+              18
+            ],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 33.62,
+            "summary": "Craig\u2019s 17-point front nine suggested a promising afternoon before the back nine trimmed that optimism to 14. Blobs on 13, 16 and 18 ensured the finish had all the subtlety of a trapdoor."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": 13,
+            "position": 13,
+            "totalPoints": 30,
+            "frontNine": 15,
+            "backNine": 15,
+            "blobHoles": [
+              2,
+              10
+            ],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony matched his nines perfectly for a symmetrical 30-point round, refusing to let either half take the blame. Blobs on 2 and 10 were small interruptions in an afternoon that was admirably even, if not explosively exciting."
+          },
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": 14,
+            "position": 14,
+            "totalPoints": 23,
+            "frontNine": 14,
+            "backNine": 9,
+            "blobHoles": [
+              8,
+              11,
+              13,
+              14
+            ],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Neil, the season leader, endured a 23-point round in which the back nine contributed a somewhat minimalist nine. Blobs at 8, 11, 13 and 14 made this less a coronation and more a royal incident report."
+          },
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": 15,
+            "position": 15,
+            "totalPoints": 21,
+            "frontNine": 9,
+            "backNine": 12,
+            "blobHoles": [
+              3,
+              4,
+              15,
+              18
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 36.0,
+            "summary": "Paul improved from 9 on the front nine to 12 on the back, at least ensuring the day ended on an upward trend. Blobs on 3, 4, 15 and 18 were the round\u2019s quartet of comic villains, but the final whistle eventually arrived."
+          }
+        ]
+      }
     },
     {
       "id": 10698,
@@ -5039,7 +6722,242 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Mens James Ward Memorial - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Matthew Cragg stormed to victory with 45 points, proving that even a blob on the 14th cannot derail a champion's march. Neil Hodgson remained comfortably on top of the season standings, while the rest of the field battled bravely, inconsistently and occasionally against the concept of scoring altogether.",
+        "playerCommentary": [
+          {
+            "playerName": "Matthew Cragg",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 45,
+            "frontNine": 21,
+            "backNine": 14,
+            "blobHoles": [
+              14
+            ],
+            "seasonPosition": 4,
+            "seasonAverageBestEight": 38.38,
+            "summary": "Matthew took the Memorial by the horns with a winning 45 points, leaving the field wondering whether he had secretly brought a calculator. The blob on 14 was merely a tiny blemish on an otherwise sparkling performance."
+          },
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 41,
+            "frontNine": 18,
+            "backNine": 15,
+            "blobHoles": [
+              11
+            ],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Neil delivered another strong showing with 41 points, maintaining his season-leading form and making second place look suspiciously deliberate. Hole 11 briefly interrupted the procession, but the season number-one remains firmly in charge."
+          },
+          {
+            "playerName": "Simon Parker",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 39,
+            "frontNine": 18,
+            "backNine": 15,
+            "blobHoles": [
+              2,
+              13
+            ],
+            "seasonPosition": 16,
+            "seasonAverageBestEight": 32.5,
+            "summary": "Simon produced a fine 39 points, wildly outperforming his season position and giving the leaderboard a much-needed plot twist. Blobs on 2 and 13 were brushed aside as he claimed a thoroughly deserved podium finish."
+          },
+          {
+            "playerName": "Craig Harrison",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 36,
+            "frontNine": 17,
+            "backNine": 15,
+            "blobHoles": [
+              18
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig posted a respectable 36 points and stayed close enough to the podium to keep the leaders looking over their shoulders. A blob on 18 was a particularly theatrical way to end the round, like a golf-course cliffhanger."
+          },
+          {
+            "playerName": "Thomas Hall",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 34,
+            "frontNine": 19,
+            "backNine": 13,
+            "blobHoles": [
+              17
+            ],
+            "seasonPosition": 15,
+            "seasonAverageBestEight": 32.62,
+            "summary": "Thomas opened with a lively 19 and finished with 34 points, comfortably beating his season average best-eight figure. The blob on 17 was an unfortunate late reminder that golf prefers suspense over sensible endings."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 32,
+            "frontNine": 17,
+            "backNine": 15,
+            "blobHoles": [
+              4,
+              10,
+              16
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham's 32 points were well below the lofty standards of the season's number two, suggesting the usual magic had taken the afternoon off. Blobs on 4, 10 and 16 formed an unwanted trilogy, but at least the performance had structure."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": 7,
+            "position": 7,
+            "totalPoints": 32,
+            "frontNine": 18,
+            "backNine": 14,
+            "blobHoles": [
+              16,
+              18
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc matched Graham on 32 points, although the finish included blobs on both 16 and 18, which is one way to make the closing holes memorable. His 18-point front nine showed there was plenty of promise before the course began negotiating terms."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": 8,
+            "position": 8,
+            "totalPoints": 31,
+            "frontNine": 14,
+            "backNine": 17,
+            "blobHoles": [],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph produced a clean card with no blobs, proving that quiet competence still exists in competitive golf. A stronger back nine lifted him to 31 points, though the leaderboard offered only a modest reward for his good behaviour."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": 9,
+            "position": 9,
+            "totalPoints": 31,
+            "frontNine": 17,
+            "backNine": 14,
+            "blobHoles": [
+              3,
+              12,
+              13
+            ],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin finished on 31 points after a steady front nine gave way to a slightly more adventurous back nine. Blobs on 3, 12 and 13 suggest the scorecard briefly became a choose-your-own-disaster novel."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": 10,
+            "position": 10,
+            "totalPoints": 30,
+            "frontNine": 14,
+            "backNine": 16,
+            "blobHoles": [
+              3,
+              8
+            ],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony improved on the back nine to reach 30 points, keeping the round from becoming a complete plotless drama. Blobs on 3 and 8 provided the necessary villains, but neither could quite steal the show."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": 11,
+            "position": 11,
+            "totalPoints": 30,
+            "frontNine": 16,
+            "backNine": 14,
+            "blobHoles": [
+              1,
+              6
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony started brightly with 16 on the front nine before settling at 30 points overall. Blobs on 1 and 6 were early turbulence, but he navigated the rest of the round without requiring an emergency landing."
+          },
+          {
+            "playerName": "Mark Heron",
+            "playerId": 12,
+            "position": 12,
+            "totalPoints": 30,
+            "frontNine": 16,
+            "backNine": 14,
+            "blobHoles": [
+              2,
+              10,
+              18
+            ],
+            "seasonPosition": 19,
+            "seasonAverageBestEight": 26.83,
+            "summary": "Mark matched the 30-point club and finished well above his season average best-eight figure, making this a welcome statistical uprising. Blobs on 2, 10 and 18 added a little chaos, because apparently a clean escape was too much to ask."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": 13,
+            "position": 13,
+            "totalPoints": 30,
+            "frontNine": 18,
+            "backNine": 12,
+            "blobHoles": [
+              2,
+              11,
+              12,
+              17
+            ],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 33.62,
+            "summary": "Craig's 18-point front nine promised fireworks, but the back nine supplied more smoke than illumination on the way to 30 points. Four blobs on 2, 11, 12 and 17 ensured the scorecard had plenty of editorial content."
+          },
+          {
+            "playerName": "Terry Battersby",
+            "playerId": 14,
+            "position": 14,
+            "totalPoints": 29,
+            "frontNine": 17,
+            "backNine": 12,
+            "blobHoles": [
+              11,
+              18
+            ],
+            "seasonPosition": 18,
+            "seasonAverageBestEight": 28.75,
+            "summary": "Terry edged above his season average with 29 points, a small but perfectly respectable statistical victory. Blobs on 11 and 18 spoiled the finale, though the front-nine 17 showed the engine was running nicely for a while."
+          },
+          {
+            "playerName": "James Murphy",
+            "playerId": 15,
+            "position": 15,
+            "totalPoints": 21,
+            "frontNine": 15,
+            "backNine": 6,
+            "blobHoles": [
+              3,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "seasonPosition": 17,
+            "seasonAverageBestEight": 30.43,
+            "summary": "James began with a respectable 15 before the back nine turned into a seven-hole comedy special, ending on 21 points. Blobs from 3 and 9 through 14 formed an impressive convoy, although none of them appeared to be carrying points."
+          }
+        ]
+      }
     },
     {
       "id": 10699,
@@ -5441,7 +7359,176 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Men's Diamond Jubilee - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Craig Harrison took the Diamond Jubilee crown with a sparkling 48 points, while Neil Hodgson stayed firmly in the silver-plated conversation on 45. Thomas Hall stormed into third despite donating hole 13 to charity, and several others discovered that golf is essentially a long walk punctuated by paperwork.",
+        "playerCommentary": [
+          {
+            "playerName": "Craig Harrison",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 48,
+            "frontNine": 18,
+            "backNine": 20,
+            "blobHoles": [],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig Harrison polished off a magnificent 48-point victory, finding an extra gear on the back nine with 20 points. No blobs, no drama, just a champion's performance with the scorecard behaving impeccably."
+          },
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 45,
+            "frontNine": 18,
+            "backNine": 19,
+            "blobHoles": [],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Neil Hodgson continued to look every inch the season leader, collecting 45 points without a single blob blemish. He pushed Craig all the way, proving that silver can still have a rather respectable shine."
+          },
+          {
+            "playerName": "Thomas Hall",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 43,
+            "frontNine": 21,
+            "backNine": 16,
+            "blobHoles": [
+              13
+            ],
+            "seasonPosition": 15,
+            "seasonAverageBestEight": 32.62,
+            "summary": "Thomas Hall produced the round's best front nine with a blistering 21 points, then sensibly took his foot off the accelerator for the back nine. Hole 13 was the lone blob, but 43 points still represented a spectacular leap above his season average."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 39,
+            "frontNine": 19,
+            "backNine": 16,
+            "blobHoles": [],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph O'Donnell delivered a tidy 39 points, combining a strong 19 on the front with a respectable 16 coming home. With no blobs to report, his card was cleaner than most kitchen counters after a tournament victory."
+          },
+          {
+            "playerName": "Matthew Cragg",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 34,
+            "frontNine": 14,
+            "backNine": 18,
+            "blobHoles": [],
+            "seasonPosition": 4,
+            "seasonAverageBestEight": 38.38,
+            "summary": "Matthew Cragg found his rhythm late, improving from 14 on the front nine to 18 on the back. No blobs and a steady finish made this less a fireworks display and more a very respectable garden lantern."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 32,
+            "frontNine": 19,
+            "backNine": 13,
+            "blobHoles": [
+              15
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony Wright launched with a lively 19-point front nine before the engine coughed slightly on the way home. Hole 15 became the day's one official blob site, but 32 points still kept him comfortably in the middle of the action."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": 7,
+            "position": 7,
+            "totalPoints": 31,
+            "frontNine": 14,
+            "backNine": 17,
+            "blobHoles": [
+              4,
+              6,
+              8
+            ],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin Burgess improved to 17 on the back nine, which was useful after a quieter opening half. Holes 4, 6 and 8 formed a small blob convention, but Colin still emerged with 31 points and his dignity mostly intact."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": 8,
+            "position": 8,
+            "totalPoints": 28,
+            "frontNine": 16,
+            "backNine": 12,
+            "blobHoles": [
+              14,
+              17
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee Smith made a decent start with 16 points before the back nine began quietly repossessing them. Blobs on 14 and 17 added a touch of late-round mischief, leaving him with 28 points and a scorecard full of character."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": 9,
+            "position": 9,
+            "totalPoints": 27,
+            "frontNine": 14,
+            "backNine": 13,
+            "blobHoles": [
+              1,
+              3,
+              10,
+              15
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham Haydock, usually found near the sharp end of the season table, endured a more modest 27-point afternoon. Blobs on 1, 3, 10 and 15 made for an unhelpful quartet, as though the course had taken personal exception to his reputation."
+          },
+          {
+            "playerName": "Mark Heron",
+            "playerId": 10,
+            "position": 10,
+            "totalPoints": 25,
+            "frontNine": 13,
+            "backNine": 12,
+            "blobHoles": [
+              2,
+              8,
+              9,
+              13,
+              14,
+              16
+            ],
+            "seasonPosition": 19,
+            "seasonAverageBestEight": 26.83,
+            "summary": "Mark Heron posted 25 points in a round that featured six blobs, giving the scorecard more interruptions than a badly timed podcast. Still, he stayed close to his season average and kept battling through the blob minefield."
+          },
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": 11,
+            "position": 11,
+            "totalPoints": 21,
+            "frontNine": 12,
+            "backNine": 9,
+            "blobHoles": [
+              1,
+              4,
+              9,
+              10,
+              11,
+              13
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 36.0,
+            "summary": "Paul P Hughes found 12 points on the front nine before the back nine produced a rather stern nine-point rebuttal. Six blobs, including a concentrated run from 9 through 13, made this a round where the scorecard clearly had the final word."
+          }
+        ]
+      }
     },
     {
       "id": 10700,
@@ -6059,7 +8146,294 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Men's Captain's Prize Round 1 - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Matthew Cragg treated Round 1 like a private points factory, producing a magnificent 55 while the rest of the field rummaged around for loose change. The chasing pack had plenty of drama, several spectacular blob collections, and enough back-nine collapses to keep the clubhouse entertained.",
+        "playerCommentary": [
+          {
+            "playerName": "Matthew Cragg",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 55,
+            "frontNine": 22,
+            "backNine": 23,
+            "blobHoles": [],
+            "seasonPosition": 4,
+            "seasonAverageBestEight": 38.38,
+            "summary": "Matthew produced a colossal 55 points, scoring heavily on both nines and leaving the field wondering whether he had secretly brought two scorecards. With no blobs anywhere, this was less a round and more a points-based occupation of the golf course."
+          },
+          {
+            "playerName": "Thomas Hall",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 42,
+            "frontNine": 13,
+            "backNine": 21,
+            "blobHoles": [
+              7,
+              8
+            ],
+            "seasonPosition": 15,
+            "seasonAverageBestEight": 32.62,
+            "summary": "Thomas found his rhythm after the turn, adding 21 points on the back nine to climb into second. Holes 7 and 8 briefly went on strike, but the rest of the round was strong enough to make a serious statement."
+          },
+          {
+            "playerName": "Stephen Murphy",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 40,
+            "frontNine": 20,
+            "backNine": 14,
+            "blobHoles": [
+              11,
+              16,
+              17
+            ],
+            "seasonPosition": 7,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Stephen launched with an excellent 20 on the front nine before the back nine applied the brakes. Three blobs on 11, 16 and 17 took the shine off, but 40 points still secured a very respectable podium finish."
+          },
+          {
+            "playerName": "Adam Shepherd",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 37,
+            "frontNine": 16,
+            "backNine": 17,
+            "blobHoles": [
+              3,
+              13
+            ],
+            "seasonPosition": 5,
+            "seasonAverageBestEight": 38.12,
+            "summary": "Adam delivered a tidy, balanced performance with 16 points out and 17 back, proving that consistency is still legal in competitive golf. Holes 3 and 13 supplied the only blobs in an otherwise well-behaved scorecard."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 35,
+            "frontNine": 17,
+            "backNine": 16,
+            "blobHoles": [
+              13
+            ],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony posted almost perfectly symmetrical nines and matched his season average best-eight with 35 points. Hole 13 was the lone rebel, ensuring the card retained at least one small subplot."
+          },
+          {
+            "playerName": "James Murphy",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 31,
+            "frontNine": 15,
+            "backNine": 16,
+            "blobHoles": [
+              1,
+              9,
+              13
+            ],
+            "seasonPosition": 17,
+            "seasonAverageBestEight": 30.43,
+            "summary": "James improved slightly after the turn and finished with 31 points, edging above his season average best-eight. Blobs on 1, 9 and 13 were inconvenient, but not enough to derail a solid sixth-place finish."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": 7,
+            "position": 7,
+            "totalPoints": 30,
+            "frontNine": 19,
+            "backNine": 11,
+            "blobHoles": [
+              10,
+              15
+            ],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin was flying early with 19 points on the front nine, then appeared to hand the steering wheel to someone else. Two blobs on the back nine helped turn a promising start into a 30-point finish."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": 8,
+            "position": 8,
+            "totalPoints": 29,
+            "frontNine": 16,
+            "backNine": 13,
+            "blobHoles": [
+              6,
+              9,
+              15,
+              16,
+              18
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham, currently second in the season standings, found Round 1 rather less cooperative than usual. Five blobs dotted the card, including a particularly unfriendly finish on 15, 16 and 18."
+          },
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": 9,
+            "position": 9,
+            "totalPoints": 28,
+            "frontNine": 16,
+            "backNine": 12,
+            "blobHoles": [
+              7,
+              12,
+              13,
+              17
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 36.0,
+            "summary": "Paul made a respectable start with 16 points before the back nine became a rather less generous landlord. Blobs on 7, 12, 13 and 17 kept him to 28, with holes 12 and 13 apparently forming a particularly effective double act."
+          },
+          {
+            "playerName": "Craig Harrison",
+            "playerId": 10,
+            "position": 10,
+            "totalPoints": 28,
+            "frontNine": 18,
+            "backNine": 10,
+            "blobHoles": [
+              9,
+              13,
+              16
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig\u2019s 18-point front nine suggested a charge was coming, but the back nine responded with a firm no and just 10 points. Blobs on 9, 13 and 16 ensured the promising launch never reached orbit."
+          },
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": 11,
+            "position": 11,
+            "totalPoints": 27,
+            "frontNine": 13,
+            "backNine": 14,
+            "blobHoles": [
+              1,
+              8,
+              15,
+              17
+            ],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "The season leader endured an unusually modest afternoon, with 27 points split almost evenly between the nines. Four blobs on 1, 8, 15 and 17 made sure the defending statistical reputation had a day off."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": 12,
+            "position": 12,
+            "totalPoints": 27,
+            "frontNine": 16,
+            "backNine": 11,
+            "blobHoles": [
+              8,
+              13,
+              14,
+              17
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc built a decent platform with 16 points on the front nine, but the return journey was decidedly less profitable. Four blobs, including a troublesome stretch from 13, 14 and 17, left him on 27."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": 13,
+            "position": 13,
+            "totalPoints": 26,
+            "frontNine": 13,
+            "backNine": 13,
+            "blobHoles": [
+              8,
+              9,
+              13,
+              17,
+              18
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony achieved perfect numerical balance with 13 points on each nine, though the symmetry could not conceal five blobs. The closing holes 17 and 18 joined the party, making the finish more memorable than profitable."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": 14,
+            "position": 14,
+            "totalPoints": 25,
+            "frontNine": 16,
+            "backNine": 9,
+            "blobHoles": [
+              2,
+              4,
+              11,
+              13,
+              14,
+              16,
+              18
+            ],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph started brightly with 16 points, then the back nine reduced his haul to single figures. Seven blobs made this card look like it had been peppered with confetti, with 13, 14 and 16 especially unhelpful."
+          },
+          {
+            "playerName": "Simon Parker",
+            "playerId": 15,
+            "position": 15,
+            "totalPoints": 24,
+            "frontNine": 15,
+            "backNine": 9,
+            "blobHoles": [
+              3,
+              10,
+              11,
+              17
+            ],
+            "seasonPosition": 16,
+            "seasonAverageBestEight": 32.5,
+            "summary": "Simon\u2019s front nine offered promise, but the back nine delivered only 9 points and a rather stern lecture. Blobs on 3, 10, 11 and 17 helped keep the total to 24."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": 16,
+            "position": 16,
+            "totalPoints": 24,
+            "frontNine": 15,
+            "backNine": 9,
+            "blobHoles": [
+              2,
+              13,
+              14,
+              16,
+              17
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee matched Simon\u2019s 24 points and identical 15-to-9 split, proving that coincidence is alive and well in golf. Five blobs, including a late run on 16 and 17, made the back nine particularly stingy."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": 17,
+            "position": 17,
+            "totalPoints": 22,
+            "frontNine": 11,
+            "backNine": 11,
+            "blobHoles": [
+              4,
+              9,
+              12,
+              14,
+              15,
+              18
+            ],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 33.62,
+            "summary": "Craig kept the nines perfectly level with 11 points apiece, but unfortunately they were level at a fairly modest altitude. Six blobs, including a closing effort on 18, ensured the round finished at 22 points."
+          }
+        ]
+      }
     },
     {
       "id": 10701,
@@ -6497,7 +8871,192 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Men's Captain's Prize Round 2 - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Neil Hodgson produced a commanding 46-point masterclass, leaving the rest of the field searching for both answers and spare points. Colin Burgess chased bravely with 42, while the leaderboard delivered its usual blend of brilliance, blobs and the occasional golfing mystery tour.",
+        "playerCommentary": [
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 46,
+            "frontNine": 18,
+            "backNine": 18,
+            "blobHoles": [],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Neil was utterly blob-free and perfectly balanced, posting 18 points on each nine like a golfer who had actually read the course notes. A superb 46 points confirms that top spot is not merely decorative."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 42,
+            "frontNine": 17,
+            "backNine": 17,
+            "blobHoles": [
+              4
+            ],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin matched his two nines with tidy 17s, suggesting consistency was very much on the menu. Hole 4 briefly misplaced the cutlery, but 42 points still secured a handsome second place."
+          },
+          {
+            "playerName": "Matthew Cragg",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 38,
+            "frontNine": 18,
+            "backNine": 14,
+            "blobHoles": [],
+            "seasonPosition": 4,
+            "seasonAverageBestEight": 38.38,
+            "summary": "Matthew opened with a sparkling 18 and remained blob-free, before the back nine apparently changed the terms and conditions. Still, 38 points and third place make this a very respectable day at the office."
+          },
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 36,
+            "frontNine": 15,
+            "backNine": 17,
+            "blobHoles": [
+              16
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 36.0,
+            "summary": "Paul improved from 15 on the front to 17 on the back, proving that patience can pay off\u2014or at least arrive after the turn. Hole 16 was the lone blob-shaped blemish on an otherwise solid 36-point performance."
+          },
+          {
+            "playerName": "Adam Shepherd",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 33,
+            "frontNine": 15,
+            "backNine": 16,
+            "blobHoles": [
+              1,
+              8,
+              11,
+              16
+            ],
+            "seasonPosition": 5,
+            "seasonAverageBestEight": 38.12,
+            "summary": "Adam edged upwards after the turn, but four blobs on holes 1, 8, 11 and 16 clearly formed an unofficial committee. Thirty-three points still earned fifth, though the scorecard may be requesting a quiet word."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 30,
+            "frontNine": 15,
+            "backNine": 15,
+            "blobHoles": [
+              3,
+              4,
+              11
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc kept things beautifully symmetrical with 15 points on both nines. The blobs on 3, 4 and 11 were less symmetrical, but 30 points was enough to hold sixth place."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": 7,
+            "position": 7,
+            "totalPoints": 29,
+            "frontNine": 16,
+            "backNine": 13,
+            "blobHoles": [
+              8,
+              10,
+              17
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony made a lively start with 16 points before the back nine applied the brakes and settled for 13. Holes 8, 10 and 17 joined forces against him, but 29 points still delivered seventh."
+          },
+          {
+            "playerName": "Stephen Murphy",
+            "playerId": 8,
+            "position": 8,
+            "totalPoints": 28,
+            "frontNine": 15,
+            "backNine": 13,
+            "blobHoles": [
+              14,
+              17
+            ],
+            "seasonPosition": 7,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Stephen\u2019s 15-point front nine gave him a promising platform, though the back nine trimmed that to 13 with assistance from blobs on 14 and 17. Twenty-eight points secured eighth, while the scorecard politely declined to discuss the late fade."
+          },
+          {
+            "playerName": "Thomas Hall",
+            "playerId": 9,
+            "position": 9,
+            "totalPoints": 27,
+            "frontNine": 15,
+            "backNine": 12,
+            "blobHoles": [
+              2,
+              10,
+              15
+            ],
+            "seasonPosition": 15,
+            "seasonAverageBestEight": 32.62,
+            "summary": "Thomas began with a respectable 15 before the back nine slipped into a twelve-point subplot. Blobs on 2, 10 and 15 added dramatic tension, but 27 points kept him safely in ninth."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": 10,
+            "position": 10,
+            "totalPoints": 25,
+            "frontNine": 12,
+            "backNine": 13,
+            "blobHoles": [
+              6,
+              8,
+              18
+            ],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony found a little extra energy after the turn, improving from 12 to 13 points. Blobs on 6, 8 and 18 ensured the round had a few plot twists, but 25 points earned tenth."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": 11,
+            "position": 11,
+            "totalPoints": 25,
+            "frontNine": 12,
+            "backNine": 13,
+            "blobHoles": [
+              15,
+              18
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham matched Tony\u2019s 25 points and mirrored his 12-to-13 improvement, making this a very specific kind of deja vu. With blobs on 15 and 18, the season\u2019s second-place player endured an unusually modest afternoon."
+          },
+          {
+            "playerName": "Craig Harrison",
+            "playerId": 12,
+            "position": 12,
+            "totalPoints": 22,
+            "frontNine": 11,
+            "backNine": 11,
+            "blobHoles": [
+              2,
+              18
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig delivered perfect numerical symmetry with 11 points on each nine, though perhaps not the kind of symmetry he had ordered. Blobs on 2 and 18 bookended the trouble, leaving the season\u2019s third-place player with 22 points and twelfth on the day."
+          }
+        ]
+      }
     },
     {
       "id": 10702,
@@ -6935,7 +9494,211 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Men's Tetley Walker Trophy Round 1 - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Marc Nelson stormed to 45 points and an emphatic opening victory, proving that sometimes the golf gods do briefly reward optimism. Paul P Hughes gave chase with 41, while the rest of the field battled bravely through a blizzard of blobs, especially on the back nine where several scorecards appeared to file formal complaints.",
+        "playerCommentary": [
+          {
+            "playerName": "Marc Nelson",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 45,
+            "frontNine": 19,
+            "backNine": 16,
+            "blobHoles": [
+              13
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc produced the round of the day with a towering 45 points, winning by four and making his season position of ninth look distinctly temporary. One blob on 13 was merely a small pothole on an otherwise very profitable road trip."
+          },
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 41,
+            "frontNine": 16,
+            "backNine": 17,
+            "blobHoles": [
+              8,
+              11
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 36.0,
+            "summary": "Paul P Hughes delivered a classy 41 points to claim second, with the back nine supplying the extra sparkle. Holes 8 and 11 were less cooperative, but overall this was a performance that politely knocked on the leader's door."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 37,
+            "frontNine": 17,
+            "backNine": 14,
+            "blobHoles": [
+              7,
+              8,
+              11,
+              13,
+              18
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham, the season's number two, settled for third with 37 points after the course served up a five-blob tasting menu. A lively front nine gave hope, but the back nine apparently came with a strict no-fun policy."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 34,
+            "frontNine": 13,
+            "backNine": 17,
+            "blobHoles": [
+              7
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee Smith recovered beautifully after a modest front nine, adding a punchy 17 on the way home for fourth place. Hole 7 was his only blob, suggesting the rest of the course wisely chose not to pick a fight."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 30,
+            "frontNine": 15,
+            "backNine": 13,
+            "blobHoles": [
+              8,
+              14,
+              17
+            ],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph O'Donnell posted a respectable 30 points, holding fifth despite three holes deciding to become administrative errors. The front nine offered the brighter story, before 14 and 17 joined 8 in the blob committee."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 27,
+            "frontNine": 16,
+            "backNine": 11,
+            "blobHoles": [
+              9,
+              12,
+              13
+            ],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin Burgess started strongly with 16 points on the front nine, then found the return journey considerably less scenic. Three blobs on 9, 12 and 13 helped turn a promising opening into a sixth-place finish."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": 7,
+            "position": 7,
+            "totalPoints": 25,
+            "frontNine": 12,
+            "backNine": 13,
+            "blobHoles": [
+              7,
+              8,
+              17,
+              18
+            ],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony Bretherton ground out 25 points in a round featuring blobs at both ends of the course and several places in between. The 13-point back nine was a respectable escape, although 17 and 18 clearly wanted the final word."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": 8,
+            "position": 8,
+            "totalPoints": 24,
+            "frontNine": 16,
+            "backNine": 8,
+            "blobHoles": [
+              4,
+              8,
+              13,
+              15,
+              16,
+              17
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony Wright looked lively with 16 points on the front nine, but the back nine then staged a dramatic six-blob coup. Holes 15, 16 and 17 formed a particularly unhelpful trilogy, leaving 24 points and an eighth-place finish."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": 9,
+            "position": 9,
+            "totalPoints": 23,
+            "frontNine": 10,
+            "backNine": 13,
+            "blobHoles": [
+              1,
+              2,
+              4,
+              14,
+              15
+            ],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 33.62,
+            "summary": "Craig Coulton spent the opening holes apparently negotiating with the golf course, emerging with 10 front-nine points before improving to 13 on the way back. Five blobs made sure ninth place remained firmly in the category of hard-earned survival."
+          },
+          {
+            "playerName": "Simon Parker",
+            "playerId": 10,
+            "position": 10,
+            "totalPoints": 23,
+            "frontNine": 12,
+            "backNine": 11,
+            "blobHoles": [
+              2,
+              9,
+              12
+            ],
+            "seasonPosition": 16,
+            "seasonAverageBestEight": 32.5,
+            "summary": "Simon Parker was admirably consistent across the nines, scoring 12 and 11 for a total of 23. Three blobs on 2, 9 and 12 interrupted the rhythm, but tenth place represents a solid start from season position 16."
+          },
+          {
+            "playerName": "Craig Harrison",
+            "playerId": 11,
+            "position": 11,
+            "totalPoints": 23,
+            "frontNine": 13,
+            "backNine": 10,
+            "blobHoles": [
+              8,
+              15,
+              16
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig Harrison, usually found much higher up the season table, had to settle for 23 points and 11th place after a promising 13-point front nine. Holes 15 and 16 joined 8 in staging a late revolt, leaving the season number three looking for a recount."
+          },
+          {
+            "playerName": "Adam Shepherd",
+            "playerId": 12,
+            "position": 12,
+            "totalPoints": 23,
+            "frontNine": 15,
+            "backNine": 8,
+            "blobHoles": [
+              7,
+              8,
+              16,
+              17,
+              18
+            ],
+            "seasonPosition": 5,
+            "seasonAverageBestEight": 38.12,
+            "summary": "Adam Shepherd began with a brisk 15 points, but the back nine turned into an eight-point escape room. Five blobs, including a grand finale on 16, 17 and 18, sent the season's number five to the foot of this particular leaderboard."
+          }
+        ]
+      }
     },
     {
       "id": 10703,
@@ -7337,7 +10100,184 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Mens' Tetley Walker Round 2 - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Tony Bretherton stormed to victory with 47 points, proving that sometimes the leaderboard rewards golf rather than simple arithmetic. Behind him, the field battled bravely, with blobs scattered like confetti and several players discovering that the back nine can be either a rescue mission or a crime scene.",
+        "playerCommentary": [
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": null,
+            "position": 1,
+            "totalPoints": 47,
+            "frontNine": 19,
+            "backNine": 18,
+            "blobHoles": [],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony took the title with a magnificent 47 points and not a single blob to stain the scorecard. His front nine was strong, his back nine remained sturdy, and the season standings have been given a polite but unmistakable shake."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": null,
+            "position": 2,
+            "totalPoints": 43,
+            "frontNine": 23,
+            "backNine": 12,
+            "blobHoles": [
+              17
+            ],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 33.62,
+            "summary": "Craig launched himself into second with a spectacular 23-point front nine, before the back nine apparently changed the password. One blob on 17 was the only blemish, although the closing stretch clearly had other ideas."
+          },
+          {
+            "playerName": "Craig Harrison",
+            "playerId": null,
+            "position": 3,
+            "totalPoints": 39,
+            "frontNine": 14,
+            "backNine": 19,
+            "blobHoles": [
+              1,
+              2
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig began with blobs on both 1 and 2, seemingly keen to give the field a head start. He then recovered impressively, adding 19 on the back nine and finishing third while demonstrating that a slow start is merely a dramatic plot device."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": null,
+            "position": 4,
+            "totalPoints": 37,
+            "frontNine": 18,
+            "backNine": 15,
+            "blobHoles": [
+              9,
+              17,
+              18
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony produced a respectable 37 points, with 18 on the front nine before the closing holes began handing out character-building moments. Blobs on 9, 17 and 18 made sure the round ended with a little suspense and a lot of scorecard editing."
+          },
+          {
+            "playerName": "Adam Shepherd",
+            "playerId": null,
+            "position": 5,
+            "totalPoints": 33,
+            "frontNine": 14,
+            "backNine": 17,
+            "blobHoles": [
+              4,
+              18
+            ],
+            "seasonPosition": 5,
+            "seasonAverageBestEight": 38.12,
+            "summary": "Adam improved from 14 on the front nine to 17 on the back, showing that the engine warmed up eventually. Holes 4 and 18 objected to the plan, but fifth place is still a tidy return from the golfing wilderness."
+          },
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": null,
+            "position": 6,
+            "totalPoints": 31,
+            "frontNine": 17,
+            "backNine": 14,
+            "blobHoles": [
+              3,
+              10,
+              13,
+              15
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 36.0,
+            "summary": "Paul put together a solid 17-point front nine before the back nine became a blob-heavy obstacle course. Four scoreless holes kept him to 31, but sixth place suggests the round was more respectable than the evidence on the card might imply."
+          },
+          {
+            "playerName": "James Murphy",
+            "playerId": null,
+            "position": 7,
+            "totalPoints": 31,
+            "frontNine": 16,
+            "backNine": 15,
+            "blobHoles": [
+              11,
+              17,
+              18
+            ],
+            "seasonPosition": 17,
+            "seasonAverageBestEight": 30.43,
+            "summary": "James delivered remarkable consistency with 16 on the front and 15 on the back, finishing on 31 points. The final stretch featured blobs on 17 and 18, but he still outperformed his season average and left the leaderboard looking considerably friendlier."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": null,
+            "position": 8,
+            "totalPoints": 30,
+            "frontNine": 16,
+            "backNine": 14,
+            "blobHoles": [
+              6,
+              14,
+              15
+            ],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin started neatly with 16 points, then found the back nine slightly less welcoming. Blobs on 6, 14 and 15 helped keep him to 30, a score that will not be framing his season-average best eight anytime soon."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": null,
+            "position": 9,
+            "totalPoints": 30,
+            "frontNine": 18,
+            "backNine": 12,
+            "blobHoles": [
+              8,
+              13,
+              17
+            ],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph looked excellent early, collecting 18 points on the front nine before the back nine apparently misplaced the instruction manual. Blobs on 8, 13 and 17 contributed to the slide, leaving him ninth but with clear evidence that the first-half version is still in there somewhere."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": null,
+            "position": 10,
+            "totalPoints": 30,
+            "frontNine": 13,
+            "backNine": 17,
+            "blobHoles": [
+              7,
+              8,
+              13
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham turned a modest 13-point front nine into a more encouraging 17-point back nine, but the recovery stopped at 30 points. Blobs on 7, 8 and 13 were costly, especially for the season's second-ranked player, who may be demanding a recount from the golf gods."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": null,
+            "position": 11,
+            "totalPoints": 27,
+            "frontNine": 17,
+            "backNine": 10,
+            "blobHoles": [
+              13,
+              14,
+              15,
+              17
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee made a promising start with 17 points on the front nine, then the back nine turned into a four-blob documentary. Holes 13, 14, 15 and 17 were particularly unkind, leaving him with 27 and plenty of time to practise selective memory."
+          }
+        ]
+      }
     },
     {
       "id": 10704,
@@ -7811,7 +10751,213 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Men's President's Prize - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Joseph O'Donnell produced a presidential performance, storming to 46 points and leaving the field wondering whether his handicap had accidentally filed for witness protection. Matthew Cragg and Terry Battersby claimed the supporting honours, while several fancied season performers discovered that golf remains gloriously indifferent to reputation.",
+        "playerCommentary": [
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": null,
+            "position": 1,
+            "totalPoints": 46,
+            "frontNine": 19,
+            "backNine": 17,
+            "blobHoles": [],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph delivered a genuinely presidential address, collecting 46 points without a single blob to interrupt the applause. His 19-point front nine laid the foundations, and the 17-point back nine ensured the trophy never had to endure a recount."
+          },
+          {
+            "playerName": "Matthew Cragg",
+            "playerId": null,
+            "position": 2,
+            "totalPoints": 41,
+            "frontNine": 17,
+            "backNine": 16,
+            "blobHoles": [],
+            "seasonPosition": 4,
+            "seasonAverageBestEight": 38.38,
+            "summary": "Matthew was impressively tidy, going blob-free and marching to 41 points with the calm efficiency of a man who had actually read the instructions. A 17-point front nine and 16-point back nine made second place look thoroughly well organised."
+          },
+          {
+            "playerName": "Terry Battersby",
+            "playerId": null,
+            "position": 3,
+            "totalPoints": 39,
+            "frontNine": 17,
+            "backNine": 16,
+            "blobHoles": [
+              8,
+              10,
+              16
+            ],
+            "seasonPosition": 18,
+            "seasonAverageBestEight": 28.75,
+            "summary": "Terry rose spectacularly from season position 18 to take third, proving that form is temporary but excellent timing is everything. Even three blobs on holes 8, 10 and 16 could not stop his 39-point charge."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": null,
+            "position": 4,
+            "totalPoints": 36,
+            "frontNine": 17,
+            "backNine": 15,
+            "blobHoles": [],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony kept the scorecard delightfully free of blobs and finished on 36 points, almost exactly matching his season best-eight average. His 17-point front nine did the heavy lifting before the back nine politely brought home 15."
+          },
+          {
+            "playerName": "Craig Harrison",
+            "playerId": null,
+            "position": 5,
+            "totalPoints": 34,
+            "frontNine": 18,
+            "backNine": 14,
+            "blobHoles": [
+              3,
+              13
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig opened with a sparkling 18-point front nine, briefly looking ready to turn the President's Prize into a personal press conference. Two blobs on holes 3 and 13 and a quieter 14-point back nine eventually settled him into fifth."
+          },
+          {
+            "playerName": "Adam Shepherd",
+            "playerId": null,
+            "position": 6,
+            "totalPoints": 31,
+            "frontNine": 17,
+            "backNine": 14,
+            "blobHoles": [
+              9,
+              15,
+              17
+            ],
+            "seasonPosition": 5,
+            "seasonAverageBestEight": 38.12,
+            "summary": "Adam made a respectable start with 17 points, but the back nine became a three-blob obstacle course on holes 15 and 17, following the ninth-hole mishap. Thirty-one points still secured sixth, though the scorecard may be requesting a lie-down."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": null,
+            "position": 7,
+            "totalPoints": 29,
+            "frontNine": 9,
+            "backNine": 20,
+            "blobHoles": [
+              3,
+              8
+            ],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 33.62,
+            "summary": "Craig played the round backwards in the best possible way, scraping together 9 points on the front nine before erupting for 20 on the back. Blobs on 3 and 8 were mere opening credits in a dramatic second-half comeback to 29 points."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": null,
+            "position": 8,
+            "totalPoints": 29,
+            "frontNine": 16,
+            "backNine": 13,
+            "blobHoles": [
+              2,
+              8,
+              11
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee began smartly with 16 points, then encountered blobs on 2, 8 and 11 that put a few dents in the campaign. A total of 29 was enough for eighth, and the scorecard at least avoided any claims of outright administrative collapse."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": null,
+            "position": 9,
+            "totalPoints": 28,
+            "frontNine": 15,
+            "backNine": 13,
+            "blobHoles": [
+              2,
+              3,
+              17
+            ],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin posted a steady 15-point front nine before holes 2, 3 and 17 supplied the scorecard with some unwanted comic relief. His 28 points earned ninth, although his season position 6 suggests the sequel should have had a stronger ending."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": null,
+            "position": 10,
+            "totalPoints": 27,
+            "frontNine": 17,
+            "backNine": 10,
+            "blobHoles": [
+              5,
+              11
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc looked very much in business after a 17-point front nine, but the back nine supplied only 10 and quietly closed the shop. Blobs on 5 and 11 were the chief suspects in a 27-point round and tenth place."
+          },
+          {
+            "playerName": "Tony Wright",
+            "playerId": null,
+            "position": 11,
+            "totalPoints": 26,
+            "frontNine": 15,
+            "backNine": 11,
+            "blobHoles": [
+              10,
+              17,
+              18
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 34.12,
+            "summary": "Tony navigated the front nine for 15 points, then found the closing stretch somewhat less welcoming. Blobs on 10, 17 and 18 made sure the finish had more plot twists than points, leaving him with 26 and eleventh place."
+          },
+          {
+            "playerName": "Stephen Murphy",
+            "playerId": null,
+            "position": 12,
+            "totalPoints": 26,
+            "frontNine": 16,
+            "backNine": 10,
+            "blobHoles": [
+              9,
+              11,
+              16,
+              17,
+              18
+            ],
+            "seasonPosition": 7,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Stephen\u2019s 16-point front nine hinted at a much happier headline, but the back nine turned into a five-blob festival on 9, 11, 16, 17 and 18. He finished on 26 points, with the final holes apparently accepting no further applications."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": null,
+            "position": 13,
+            "totalPoints": 19,
+            "frontNine": 9,
+            "backNine": 10,
+            "blobHoles": [
+              2,
+              3,
+              7,
+              8,
+              12,
+              13,
+              18
+            ],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 41.38,
+            "summary": "Graham arrived as the season\u2019s number two but found the President\u2019s Prize rather less presidential, collecting 19 points. Seven blobs across holes 2, 3, 7, 8, 12, 13 and 18 made this one a long-running negotiation with the scorecard."
+          }
+        ]
+      }
     },
     {
       "id": 10705,
@@ -8033,7 +11179,103 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Club Championships Round 1 - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Joseph O'Donnell stormed to 50 points, proving that sometimes the leaderboard really does know what it is doing. Stephen Murphy gave chase, while the rest of the field battled bravely against golf, gravity and several holes that clearly had personal grievances.",
+        "playerCommentary": [
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 50,
+            "frontNine": 24,
+            "backNine": 16,
+            "blobHoles": [],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph produced a championship-opening masterclass with 50 points and no blobs, making every hole look suspiciously cooperative. From season position 8 to the top of this round, he has launched a serious bid for bragging rights\u2014and possibly control of the clubhouse playlist."
+          },
+          {
+            "playerName": "Stephen Murphy",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 45,
+            "frontNine": 21,
+            "backNine": 16,
+            "blobHoles": [],
+            "seasonPosition": 7,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Stephen kept Joseph honest with a superb 45 points and, like the leader, avoided the dreaded blob entirely. Season position 7 suddenly looks like an administrative error, although he may prefer to call it a carefully timed stealth operation."
+          },
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 37,
+            "frontNine": 16,
+            "backNine": 15,
+            "blobHoles": [
+              3,
+              14
+            ],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Season leader Neil posted 37 points, which is respectable but rather less terrifying than his best-eight average of 43.0. Blobs on 3 and 14 interrupted the reign of terror, though third place still confirms that the crown has not been fully misplaced."
+          },
+          {
+            "playerName": "Matthew Cragg",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 33,
+            "frontNine": 14,
+            "backNine": 15,
+            "blobHoles": [
+              5,
+              12
+            ],
+            "seasonPosition": 4,
+            "seasonAverageBestEight": 38.38,
+            "summary": "Matthew carded 33 points, with blobs on 5 and 12 acting as unwanted footnotes in an otherwise determined campaign. Sitting fourth in the season standings, he remains firmly in the mix\u2014though the leaderboard may be asking for a little more drama and a few more points next time."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 30,
+            "frontNine": 16,
+            "backNine": 12,
+            "blobHoles": [
+              6,
+              10,
+              15,
+              17,
+              18
+            ],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony collected 30 points after five holes\u20146, 10, 15, 17 and 18\u2014decided to withhold their support. From season position 12, this was still a respectable showing, and the front-nine 16 suggests the engine started well before the back nine began throwing furniture."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 26,
+            "frontNine": 13,
+            "backNine": 13,
+            "blobHoles": [
+              1,
+              6,
+              12,
+              14
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee finished with 26 points, neatly splitting the damage into 13 on each nine while collecting blobs on 1, 6, 12 and 14. Season position 11 means the comeback story is still available, and every great golf tale needs a heroic chapter after a slightly experimental opening."
+          }
+        ]
+      }
     },
     {
       "id": 10706,
@@ -8255,7 +11497,103 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "Club Championships Round 2 - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Stephen Murphy detonated a 46-point masterpiece to win the round by a country mile, while the rest of the field tried to remember where they had left their scoring clubs. Lee Smith and Neil Hodgson completed the podium, but several back-nine adventures suggested the golf gods had installed a few extra traps for entertainment.",
+        "playerCommentary": [
+          {
+            "playerName": "Stephen Murphy",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 46,
+            "frontNine": 19,
+            "backNine": 17,
+            "blobHoles": [],
+            "seasonPosition": 7,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Stephen produced a 46-point masterclass, leading the field with 19 on the front and a tidy 17 on the back. With no blobs whatsoever, he treated every hole like it had personally offended him and finished comfortably clear at the top."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 38,
+            "frontNine": 16,
+            "backNine": 14,
+            "blobHoles": [
+              9,
+              12
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Lee carded a solid 38 points for second place, despite holes 9 and 12 briefly turning into witness protection locations for his score. A strong 16-point front nine did most of the heavy lifting before the back nine settled for 14."
+          },
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 35,
+            "frontNine": 17,
+            "backNine": 12,
+            "blobHoles": [
+              13,
+              17
+            ],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Neil, the season leader, opened with a respectable 17 before the back nine staged a small rebellion and returned just 12. Blobs on 13 and 17 ensured his 35 points secured third rather than another episode of total domination."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 33,
+            "frontNine": 15,
+            "backNine": 14,
+            "blobHoles": [
+              2
+            ],
+            "seasonPosition": 12,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony delivered a nicely balanced 33 points, with 15 on the front and 14 on the back. Hole 2 was the lone blob-based blemish, proving that even a steady round needs one hole designated for dramatic effect."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 31,
+            "frontNine": 17,
+            "backNine": 12,
+            "blobHoles": [
+              9,
+              11,
+              18
+            ],
+            "seasonPosition": 8,
+            "seasonAverageBestEight": 36.75,
+            "summary": "Joseph surged to 17 points on the front nine, then the back nine apparently misplaced the instruction manual and produced 12. Blobs at 9, 11 and 18 rounded off a 31-point day with just enough chaos to keep the scorecard interesting."
+          },
+          {
+            "playerName": "Matthew Cragg",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 23,
+            "frontNine": 11,
+            "backNine": 12,
+            "blobHoles": [
+              5,
+              16,
+              17,
+              18
+            ],
+            "seasonPosition": 4,
+            "seasonAverageBestEight": 38.38,
+            "summary": "Matthew found 11 points on the front and 12 on the back, but the four blobs on 5, 16, 17 and 18 formed a particularly unhelpful committee. His season form says there is much more in the tank; today, the tank was apparently parked somewhere near the clubhouse."
+          }
+        ]
+      }
     },
     {
       "id": 10707,
@@ -8513,7 +11851,128 @@
             "date": ""
           }
         }
-      ]
+      ],
+      "commentary": {
+        "title": "August Singles Stableford - Comedy Recap",
+        "generatedBy": "Claude (comedian sports desk)",
+        "overallSummary": "Craig Harrison stormed to 44 points and the title, proving that sometimes the golf gods reward confidence, perseverance, and only one blob. Marc Nelson made a spectacular front-nine charge with 23 points, while the rest of the field battled bravely, creatively, and occasionally against the concept of scoring on every hole.",
+        "playerCommentary": [
+          {
+            "playerName": "Craig Harrison",
+            "playerId": 1,
+            "position": 1,
+            "totalPoints": 44,
+            "frontNine": 18,
+            "backNine": 16,
+            "blobHoles": [
+              3
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig Harrison took the August title with a commanding 44 points, comfortably outscoring the field and making his season average look almost suspiciously modest. A lone blob on hole 3 was less a disaster and more a brief administrative error."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": 2,
+            "position": 2,
+            "totalPoints": 41,
+            "frontNine": 23,
+            "backNine": 10,
+            "blobHoles": [
+              11,
+              13,
+              15,
+              16
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 36.38,
+            "summary": "Marc launched an extraordinary 23-point front nine and looked like he had the trophy booked for delivery. The back nine produced just 10 points and four blobs, turning a runaway victory into a spirited second-place finish."
+          },
+          {
+            "playerName": "Terry Battersby",
+            "playerId": 3,
+            "position": 3,
+            "totalPoints": 37,
+            "frontNine": 19,
+            "backNine": 12,
+            "blobHoles": [
+              6,
+              13,
+              17
+            ],
+            "seasonPosition": 18,
+            "seasonAverageBestEight": 28.75,
+            "summary": "Terry Battersby put together a very respectable 37 points, a performance that has surely caused his season average to sit up and pay attention. Three blobs on holes 6, 13, and 17 tried to spoil the party, but third place remained safely secured."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": 4,
+            "position": 4,
+            "totalPoints": 35,
+            "frontNine": 20,
+            "backNine": 11,
+            "blobHoles": [
+              10,
+              17
+            ],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 33.62,
+            "summary": "Craig Coulton reached 35 points with a solid 20-point front nine, showing early signs of being a serious nuisance to the leaderboard. Two blobs on holes 10 and 17 interrupted proceedings, but fourth place is still a respectable medal-shaped consolation."
+          },
+          {
+            "playerName": "Colin Burgess",
+            "playerId": 5,
+            "position": 5,
+            "totalPoints": 32,
+            "frontNine": 11,
+            "backNine": 19,
+            "blobHoles": [
+              1,
+              4
+            ],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 37.88,
+            "summary": "Colin Burgess endured a front nine worth 11 points before dramatically turning the engine on for a 19-point back nine. Blobs on holes 1 and 4 clearly served as a warm-up routine, with the real Colin arriving after the turn."
+          },
+          {
+            "playerName": "Adam Shepherd",
+            "playerId": 6,
+            "position": 6,
+            "totalPoints": 26,
+            "frontNine": 15,
+            "backNine": 11,
+            "blobHoles": [
+              3,
+              4,
+              11,
+              16,
+              17
+            ],
+            "seasonPosition": 5,
+            "seasonAverageBestEight": 38.12,
+            "summary": "Adam Shepherd collected 26 points, with a respectable 15 on the front nine before the round became a five-blob expedition. Holes 3, 4, 11, 16, and 17 clearly declined to participate in the scoring narrative."
+          },
+          {
+            "playerName": "Thomas Hall",
+            "playerId": 7,
+            "position": 7,
+            "totalPoints": 23,
+            "frontNine": 12,
+            "backNine": 11,
+            "blobHoles": [
+              1,
+              4,
+              11,
+              15,
+              16,
+              18
+            ],
+            "seasonPosition": 15,
+            "seasonAverageBestEight": 32.62,
+            "summary": "Thomas Hall finished with 23 points after a remarkably even split of 12 and 11, proving consistency can exist even when the scoreboard is feeling unkind. Six blobs, including a dramatic finale on hole 18, ensured the round had plenty of plot twists."
+          }
+        ]
+      }
     },
     {
       "id": 10709,
