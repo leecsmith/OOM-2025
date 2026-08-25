@@ -770,6 +770,114 @@
   .stab-2 { }
   .stab-3 { background: #4CAF50; color: white; border-radius: 50%; }
   .stab-4 { background: #FFD700; color: #5a4200; border-radius: 50%; }
+
+  /* ===== COMPETITION COMMENTARY (MATCH REPORT) ===== */
+  .commentary-wrap {
+    margin-top: 36px;
+    background: white;
+    border: 1px solid var(--grey-mid);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  }
+
+  .commentary-masthead {
+    background: var(--black);
+    color: white;
+    padding: 20px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    border-bottom: 3px solid var(--red);
+  }
+
+  .commentary-masthead-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  .commentary-masthead-byline {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+    white-space: nowrap;
+  }
+
+  .commentary-summary {
+    margin: 24px 28px;
+    padding: 16px 20px;
+    background: var(--grey-light);
+    border-left: 4px solid var(--red);
+    border-radius: 0 4px 4px 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--black);
+    font-style: italic;
+  }
+
+  .commentary-players {
+    border-top: 2px solid var(--red);
+  }
+
+  .commentary-player {
+    padding: 18px 28px;
+    border-bottom: 1px solid var(--grey-mid);
+  }
+
+  .commentary-player:last-child { border-bottom: none; }
+  .commentary-player:nth-child(even) { background: var(--grey-light); }
+
+  .commentary-player-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+
+  .commentary-player-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--black);
+  }
+
+  .commentary-player-points {
+    margin-left: auto;
+    font-weight: 700;
+    color: var(--red);
+    font-size: 1.05rem;
+    white-space: nowrap;
+  }
+
+  .commentary-player-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 18px;
+    font-size: 0.76rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--grey-text);
+    margin-bottom: 10px;
+  }
+
+  .commentary-player-stats strong {
+    color: var(--black);
+    font-weight: 700;
+  }
+
+  .commentary-player-stats .blob-flag { color: var(--red); font-weight: 700; }
+
+  .commentary-player-summary {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--black);
+  }
 </style>
 </head>
 <body>
@@ -963,7 +1071,7 @@
     window.addEventListener('popstate', applyRouteFromUrl);
 
     // Load data.json (cache-busted; website reads website/data.json only)
-    fetch('data.json?v=' + Date.now(), { cache: 'no-store' })
+    fetch('data_with_commentary.json?v=' + Date.now(), { cache: 'no-store' })
       .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(json => {
         if (!json.overallLeaderboard || !json.competitions) throw new Error('Invalid data');
@@ -995,6 +1103,63 @@
     if (p === 2) return 'pos-2';
     if (p === 3) return 'pos-3';
     return 'pos-other';
+  }
+
+  function escapeHtml(str) {
+    return String(str == null ? '' : str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
+  function renderCommentarySection(commentary) {
+    let html = '<div class="commentary-wrap">';
+    html += '<div class="commentary-masthead">';
+    html += '<div class="commentary-masthead-title">' + escapeHtml(commentary.title || 'Match Report') + '</div>';
+    if (commentary.generatedBy) {
+      html += '<div class="commentary-masthead-byline">' + escapeHtml(commentary.generatedBy) + '</div>';
+    }
+    html += '</div>';
+
+    if (commentary.overallSummary) {
+      html += '<p class="commentary-summary">' + escapeHtml(commentary.overallSummary) + '</p>';
+    }
+
+    const players = commentary.playerCommentary || [];
+    if (players.length) {
+      html += '<div class="commentary-players">';
+      players.forEach(p => {
+        const blobHoles = Array.isArray(p.blobHoles) ? p.blobHoles : [];
+        const blobText = blobHoles.length
+          ? '<span class="blob-flag">Blobs: ' + blobHoles.join(', ') + '</span>'
+          : '<span>No blobs</span>';
+        html += '<div class="commentary-player">';
+        html += '<div class="commentary-player-head">';
+        html += '<span class="pos-badge ' + posClass(p.position) + '">' + (p.position != null ? p.position : '') + '</span>';
+        html += '<span class="commentary-player-name">' + escapeHtml(p.playerName) + '</span>';
+        html += '<span class="commentary-player-points">' + (p.totalPoints != null ? p.totalPoints : 0) + ' pts</span>';
+        html += '</div>';
+        html += '<div class="commentary-player-stats">';
+        html += '<span>Front 9: <strong>' + (p.frontNine != null ? p.frontNine : '—') + '</strong></span>';
+        html += '<span>Back 9: <strong>' + (p.backNine != null ? p.backNine : '—') + '</strong></span>';
+        html += '<span>' + blobText + '</span>';
+        if (p.seasonPosition != null) {
+          html += '<span>Season Pos: <strong>' + p.seasonPosition + '</strong></span>';
+        }
+        if (p.seasonAverageBestEight != null) {
+          html += '<span>Season Avg: <strong>' + p.seasonAverageBestEight + '</strong></span>';
+        }
+        html += '</div>';
+        if (p.summary) {
+          html += '<p class="commentary-player-summary">' + escapeHtml(p.summary) + '</p>';
+        }
+        html += '</div>';
+      });
+      html += '</div>';
+    }
+
+    html += '</div>';
+    return html;
   }
 
   function renderLeaderboard() {
@@ -1166,6 +1331,11 @@
       }
 
       html += '</tbody></table>';
+
+      if (selectedCompetition.commentary) {
+        html += renderCommentarySection(selectedCompetition.commentary);
+      }
+
       contentEl.innerHTML = html;
 
       if (getPageIdFromUrl() === 'competition-scores') {
