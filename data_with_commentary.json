@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-09-05T20:09:31.825865",
+  "lastUpdated": "2026-09-26T18:40:27.464062",
   "overallLeaderboard": [
     {
       "playerName": "Neil Hodgson",
       "playerId": 12004,
-      "competitions": 14,
-      "totalRounds": 14,
+      "competitions": 15,
+      "totalRounds": 15,
       "totalStableford": 280,
       "totalBonus": 64,
       "totalPoints": 344,
@@ -24,7 +24,8 @@
         "10699": 45,
         "10705": 37,
         "10706": 35,
-        "10709": 32
+        "10709": 32,
+        "11485": 23
       },
       "scoringCompetitions": [
         10689,
@@ -41,12 +42,12 @@
     {
       "playerName": "Graham Haydock",
       "playerId": 21167,
-      "competitions": 16,
-      "totalRounds": 16,
-      "totalStableford": 276,
-      "totalBonus": 56,
-      "totalPoints": 332,
-      "averageBestEight": 41.5,
+      "competitions": 17,
+      "totalRounds": 17,
+      "totalStableford": 282,
+      "totalBonus": 60,
+      "totalPoints": 342,
+      "averageBestEight": 42.75,
       "competitionScores": {
         "10687": 47,
         "10688": 44,
@@ -63,7 +64,8 @@
         "10699": 27,
         "10704": 19,
         "10709": 30,
-        "11472": 33
+        "11472": 33,
+        "11485": 43
       },
       "scoringCompetitions": [
         10688,
@@ -72,7 +74,7 @@
         10695,
         10696,
         10702,
-        11472,
+        11485,
         10687
       ],
       "position": 2
@@ -80,8 +82,8 @@
     {
       "playerName": "Craig Harrison",
       "playerId": 11969,
-      "competitions": 16,
-      "totalRounds": 16,
+      "competitions": 17,
+      "totalRounds": 17,
       "totalStableford": 269,
       "totalBonus": 48,
       "totalPoints": 317,
@@ -102,7 +104,8 @@
         "10704": 34,
         "10707": 44,
         "10709": 33,
-        "11472": 31
+        "11472": 31,
+        "11485": 26
       },
       "scoringCompetitions": [
         10689,
@@ -119,12 +122,12 @@
     {
       "playerName": "Adam Shepherd",
       "playerId": 36694,
-      "competitions": 12,
-      "totalRounds": 12,
-      "totalStableford": 268,
+      "competitions": 13,
+      "totalRounds": 13,
+      "totalStableford": 270,
       "totalBonus": 46,
-      "totalPoints": 314,
-      "averageBestEight": 39.25,
+      "totalPoints": 316,
+      "averageBestEight": 39.5,
       "competitionScores": {
         "10686": 36,
         "10693": 45,
@@ -137,16 +140,17 @@
         "10704": 31,
         "10707": 26,
         "10709": 48,
-        "11472": 40
+        "11472": 40,
+        "11485": 35
       },
       "scoringCompetitions": [
         10693,
         10696,
         10700,
-        10701,
         10703,
         11472,
         10709,
+        11485,
         10686
       ],
       "position": 4
@@ -154,8 +158,8 @@
     {
       "playerName": "Matthew Cragg",
       "playerId": 11761,
-      "competitions": 10,
-      "totalRounds": 10,
+      "competitions": 11,
+      "totalRounds": 11,
       "totalStableford": 261,
       "totalBonus": 46,
       "totalPoints": 307,
@@ -170,7 +174,8 @@
         "10699": 34,
         "10704": 41,
         "10705": 33,
-        "10706": 23
+        "10706": 23,
+        "11485": 29
       },
       "scoringCompetitions": [
         10698,
@@ -183,6 +188,44 @@
         10687
       ],
       "position": 5
+    },
+    {
+      "playerName": "Paul P Hughes",
+      "playerId": 18109,
+      "competitions": 15,
+      "totalRounds": 15,
+      "totalStableford": 264,
+      "totalBonus": 40,
+      "totalPoints": 304,
+      "averageBestEight": 38.0,
+      "competitionScores": {
+        "10686": 32,
+        "10688": 38,
+        "10689": 27,
+        "10693": 29,
+        "10694": 47,
+        "10695": 33,
+        "10696": 21,
+        "10702": 41,
+        "10703": 31,
+        "10700": 28,
+        "10701": 36,
+        "10699": 21,
+        "10709": 30,
+        "11472": 30,
+        "11485": 46
+      },
+      "scoringCompetitions": [
+        10688,
+        10694,
+        10695,
+        10701,
+        10702,
+        10703,
+        11485,
+        10686
+      ],
+      "position": 6
     },
     {
       "playerName": "Colin Burgess",
@@ -221,7 +264,7 @@
         10709,
         10686
       ],
-      "position": 6
+      "position": 7
     },
     {
       "playerName": "Stephen Murphy",
@@ -255,17 +298,17 @@
         10709,
         10687
       ],
-      "position": 7
+      "position": 8
     },
     {
       "playerName": "Joseph O'Donnell",
       "playerId": 49288,
-      "competitions": 17,
-      "totalRounds": 17,
-      "totalStableford": 267,
+      "competitions": 18,
+      "totalRounds": 18,
+      "totalStableford": 268,
       "totalBonus": 34,
-      "totalPoints": 301,
-      "averageBestEight": 37.62,
+      "totalPoints": 302,
+      "averageBestEight": 37.75,
       "competitionScores": {
         "10686": 27,
         "10687": 34,
@@ -283,29 +326,30 @@
         "10705": 50,
         "10706": 31,
         "10709": 32,
-        "11472": 38
+        "11472": 38,
+        "11485": 32
       },
       "scoringCompetitions": [
         10689,
-        10695,
         10699,
         10704,
         10705,
         11472,
         10709,
+        11485,
         10687
       ],
-      "position": 8
+      "position": 9
     },
     {
       "playerName": "Marc Nelson",
       "playerId": 20473,
-      "competitions": 14,
-      "totalRounds": 14,
-      "totalStableford": 261,
-      "totalBonus": 30,
-      "totalPoints": 291,
-      "averageBestEight": 36.38,
+      "competitions": 15,
+      "totalRounds": 15,
+      "totalStableford": 265,
+      "totalBonus": 34,
+      "totalPoints": 299,
+      "averageBestEight": 37.38,
       "competitionScores": {
         "10686": 19,
         "10688": 34,
@@ -320,19 +364,58 @@
         "10698": 32,
         "10704": 27,
         "10707": 41,
-        "10709": 44
+        "10709": 44,
+        "11485": 37
       },
       "scoringCompetitions": [
         10688,
-        10695,
         10696,
         10698,
         10701,
         10702,
         10707,
-        10709
+        10709,
+        11485
       ],
-      "position": 9
+      "position": 10
+    },
+    {
+      "playerName": "Tony Wright",
+      "playerId": 28737,
+      "competitions": 15,
+      "totalRounds": 15,
+      "totalStableford": 264,
+      "totalBonus": 28,
+      "totalPoints": 292,
+      "averageBestEight": 36.5,
+      "competitionScores": {
+        "10686": 25,
+        "10688": 25,
+        "10689": 28,
+        "10693": 32,
+        "10694": 29,
+        "10695": 37,
+        "10696": 47,
+        "10702": 24,
+        "10703": 37,
+        "10700": 26,
+        "10701": 29,
+        "10698": 30,
+        "10699": 32,
+        "10704": 26,
+        "11485": 48
+      },
+      "scoringCompetitions": [
+        10693,
+        10694,
+        10695,
+        10696,
+        10698,
+        10699,
+        10703,
+        11485
+      ],
+      "position": 11
     },
     {
       "playerName": "Thomas Hall",
@@ -364,50 +447,13 @@
         11472,
         10709
       ],
-      "position": 10
-    },
-    {
-      "playerName": "Paul P Hughes",
-      "playerId": 18109,
-      "competitions": 14,
-      "totalRounds": 14,
-      "totalStableford": 256,
-      "totalBonus": 32,
-      "totalPoints": 288,
-      "averageBestEight": 36.0,
-      "competitionScores": {
-        "10686": 32,
-        "10688": 38,
-        "10689": 27,
-        "10693": 29,
-        "10694": 47,
-        "10695": 33,
-        "10696": 21,
-        "10702": 41,
-        "10703": 31,
-        "10700": 28,
-        "10701": 36,
-        "10699": 21,
-        "10709": 30,
-        "11472": 30
-      },
-      "scoringCompetitions": [
-        10688,
-        10694,
-        10695,
-        10701,
-        10702,
-        10703,
-        10709,
-        10686
-      ],
-      "position": 11
+      "position": 12
     },
     {
       "playerName": "Lee Smith",
       "playerId": 23985,
-      "competitions": 17,
-      "totalRounds": 17,
+      "competitions": 18,
+      "totalRounds": 18,
       "totalStableford": 257,
       "totalBonus": 28,
       "totalPoints": 285,
@@ -429,7 +475,8 @@
         "10705": 26,
         "10706": 38,
         "10709": 33,
-        "11472": 30
+        "11472": 30,
+        "11485": 30
       },
       "scoringCompetitions": [
         10688,
@@ -441,13 +488,13 @@
         10706,
         10709
       ],
-      "position": 12
+      "position": 13
     },
     {
       "playerName": "Simon Parker",
       "playerId": 12237,
-      "competitions": 11,
-      "totalRounds": 11,
+      "competitions": 12,
+      "totalRounds": 12,
       "totalStableford": 262,
       "totalBonus": 22,
       "totalPoints": 284,
@@ -463,7 +510,8 @@
         "10700": 24,
         "10698": 39,
         "10709": 38,
-        "11472": 48
+        "11472": 48,
+        "11485": 29
       },
       "scoringCompetitions": [
         10688,
@@ -475,13 +523,13 @@
         11472,
         10709
       ],
-      "position": 13
+      "position": 14
     },
     {
       "playerName": "Tony Bretherton",
       "playerId": 11653,
-      "competitions": 14,
-      "totalRounds": 14,
+      "competitions": 15,
+      "totalRounds": 15,
       "totalStableford": 256,
       "totalBonus": 24,
       "totalPoints": 280,
@@ -500,7 +548,8 @@
         "10698": 30,
         "10704": 36,
         "10705": 30,
-        "10706": 33
+        "10706": 33,
+        "11485": 30
       },
       "scoringCompetitions": [
         10688,
@@ -512,54 +561,17 @@
         10704,
         10706
       ],
-      "position": 14
-    },
-    {
-      "playerName": "Tony Wright",
-      "playerId": 28737,
-      "competitions": 14,
-      "totalRounds": 14,
-      "totalStableford": 255,
-      "totalBonus": 18,
-      "totalPoints": 273,
-      "averageBestEight": 34.12,
-      "competitionScores": {
-        "10686": 25,
-        "10688": 25,
-        "10689": 28,
-        "10693": 32,
-        "10694": 29,
-        "10695": 37,
-        "10696": 47,
-        "10702": 24,
-        "10703": 37,
-        "10700": 26,
-        "10701": 29,
-        "10698": 30,
-        "10699": 32,
-        "10704": 26
-      },
-      "scoringCompetitions": [
-        10693,
-        10694,
-        10695,
-        10696,
-        10698,
-        10699,
-        10701,
-        10703
-      ],
       "position": 15
     },
     {
       "playerName": "Craig Coulton",
       "playerId": 11754,
-      "competitions": 13,
-      "totalRounds": 13,
-      "totalStableford": 251,
+      "competitions": 14,
+      "totalRounds": 14,
+      "totalStableford": 252,
       "totalBonus": 18,
-      "totalPoints": 269,
-      "averageBestEight": 33.62,
+      "totalPoints": 270,
+      "averageBestEight": 33.75,
       "competitionScores": {
         "10688": 22,
         "10689": 30,
@@ -573,7 +585,8 @@
         "10698": 30,
         "10704": 29,
         "10707": 35,
-        "11472": 30
+        "11472": 30,
+        "11485": 31
       },
       "scoringCompetitions": [
         10689,
@@ -581,11 +594,44 @@
         10694,
         10695,
         10696,
-        10698,
         10703,
-        10707
+        10707,
+        11485
       ],
       "position": 16
+    },
+    {
+      "playerName": "Terry Battersby",
+      "playerId": 46812,
+      "competitions": 10,
+      "totalRounds": 10,
+      "totalStableford": 238,
+      "totalBonus": 12,
+      "totalPoints": 250,
+      "averageBestEight": 31.25,
+      "competitionScores": {
+        "10686": 20,
+        "10687": 26,
+        "10688": 21,
+        "10689": 28,
+        "10698": 29,
+        "10704": 39,
+        "10707": 37,
+        "10709": 30,
+        "11472": 30,
+        "11485": 31
+      },
+      "scoringCompetitions": [
+        10689,
+        10698,
+        10704,
+        11472,
+        10707,
+        10709,
+        11485,
+        10687
+      ],
+      "position": 17
     },
     {
       "playerName": "James Murphy",
@@ -613,38 +659,6 @@
         10700,
         10703,
         10709
-      ],
-      "position": 17
-    },
-    {
-      "playerName": "Terry Battersby",
-      "playerId": 46812,
-      "competitions": 9,
-      "totalRounds": 9,
-      "totalStableford": 228,
-      "totalBonus": 12,
-      "totalPoints": 240,
-      "averageBestEight": 30.0,
-      "competitionScores": {
-        "10686": 20,
-        "10687": 26,
-        "10688": 21,
-        "10689": 28,
-        "10698": 29,
-        "10704": 39,
-        "10707": 37,
-        "10709": 30,
-        "11472": 30
-      },
-      "scoringCompetitions": [
-        10688,
-        10689,
-        10698,
-        10704,
-        11472,
-        10707,
-        10709,
-        10687
       ],
       "position": 18
     },
@@ -13332,6 +13346,734 @@
             "seasonPosition": 18,
             "seasonAverageBestEight": 30.0,
             "summary": "Battersby also finished on 30 points with matching 15s, making him the final member of the round's oddly crowded middle class. A solitary blob at 1 and a season average of exactly 30.0 indicate that, unlike others, he delivered almost precisely what the paperwork predicted—hardly inspiring, but at least the scorecard was not allowed to develop unrealistic expectations."
+          }
+        ]
+      }
+    },
+    {
+      "id": 11485,
+      "name": "Singles Medal",
+      "leaderboard": [
+        {
+          "playerId": 28737,
+          "playerName": "Tony Wright",
+          "rounds": 1,
+          "stableford": 38,
+          "bonus": 10,
+          "points": 48,
+          "position": 1,
+          "holeData": {
+            "holes": {
+              "1": 2,
+              "2": 2,
+              "3": 3,
+              "4": 2,
+              "5": 3,
+              "6": 2,
+              "7": 1,
+              "8": 2,
+              "9": 3,
+              "10": 1,
+              "11": 1,
+              "12": 3,
+              "13": 3,
+              "14": 3,
+              "15": 1,
+              "16": 3,
+              "17": 3,
+              "18": 0
+            },
+            "stableford": 38,
+            "bonus": 10,
+            "total": 48,
+            "roundId": "134699",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 18109,
+          "playerName": "Paul P Hughes",
+          "rounds": 1,
+          "stableford": 38,
+          "bonus": 8,
+          "points": 46,
+          "position": 2,
+          "holeData": {
+            "holes": {
+              "1": 2,
+              "2": 0,
+              "3": 2,
+              "4": 3,
+              "5": 3,
+              "6": 3,
+              "7": 3,
+              "8": 3,
+              "9": 2,
+              "10": 1,
+              "11": 1,
+              "12": 3,
+              "13": 2,
+              "14": 3,
+              "15": 2,
+              "16": 0,
+              "17": 2,
+              "18": 3
+            },
+            "stableford": 38,
+            "bonus": 8,
+            "total": 46,
+            "roundId": "134658",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 21167,
+          "playerName": "Graham Haydock",
+          "rounds": 1,
+          "stableford": 37,
+          "bonus": 6,
+          "points": 43,
+          "position": 3,
+          "holeData": {
+            "holes": {
+              "1": 2,
+              "2": 3,
+              "3": 1,
+              "4": 1,
+              "5": 4,
+              "6": 2,
+              "7": 3,
+              "8": 1,
+              "9": 1,
+              "10": 2,
+              "11": 2,
+              "12": 3,
+              "13": 2,
+              "14": 3,
+              "15": 1,
+              "16": 3,
+              "17": 2,
+              "18": 1
+            },
+            "stableford": 37,
+            "bonus": 6,
+            "total": 43,
+            "roundId": "134738",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 20473,
+          "playerName": "Marc Nelson",
+          "rounds": 1,
+          "stableford": 33,
+          "bonus": 4,
+          "points": 37,
+          "position": 4,
+          "holeData": {
+            "holes": {
+              "1": 3,
+              "2": 2,
+              "3": 2,
+              "4": 0,
+              "5": 2,
+              "6": 2,
+              "7": 3,
+              "8": 2,
+              "9": 1,
+              "10": 2,
+              "11": 3,
+              "12": 2,
+              "13": 1,
+              "14": 3,
+              "15": 1,
+              "16": 2,
+              "17": 0,
+              "18": 2
+            },
+            "stableford": 33,
+            "bonus": 4,
+            "total": 37,
+            "roundId": "134679",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 36694,
+          "playerName": "Adam Shepherd",
+          "rounds": 1,
+          "stableford": 33,
+          "bonus": 2,
+          "points": 35,
+          "position": 5,
+          "holeData": {
+            "holes": {
+              "1": 2,
+              "2": 2,
+              "3": 1,
+              "4": 1,
+              "5": 2,
+              "6": 1,
+              "7": 3,
+              "8": 3,
+              "9": 3,
+              "10": 3,
+              "11": 1,
+              "12": 2,
+              "13": 0,
+              "14": 1,
+              "15": 1,
+              "16": 3,
+              "17": 2,
+              "18": 2
+            },
+            "stableford": 33,
+            "bonus": 2,
+            "total": 35,
+            "roundId": "134748",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 49288,
+          "playerName": "Joseph O'Donnell",
+          "rounds": 1,
+          "stableford": 32,
+          "bonus": 0,
+          "points": 32,
+          "position": 6,
+          "holeData": {
+            "holes": {
+              "1": 0,
+              "2": 1,
+              "3": 2,
+              "4": 2,
+              "5": 3,
+              "6": 2,
+              "7": 2,
+              "8": 2,
+              "9": 2,
+              "10": 2,
+              "11": 1,
+              "12": 3,
+              "13": 2,
+              "14": 1,
+              "15": 1,
+              "16": 3,
+              "17": 2,
+              "18": 1
+            },
+            "stableford": 32,
+            "bonus": 0,
+            "total": 32,
+            "roundId": "134727",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 11754,
+          "playerName": "Craig Coulton",
+          "rounds": 1,
+          "stableford": 31,
+          "bonus": 0,
+          "points": 31,
+          "position": 7,
+          "holeData": {
+            "holes": {
+              "1": 2,
+              "2": 3,
+              "3": 3,
+              "4": 0,
+              "5": 1,
+              "6": 0,
+              "7": 2,
+              "8": 1,
+              "9": 1,
+              "10": 2,
+              "11": 3,
+              "12": 3,
+              "13": 2,
+              "14": 1,
+              "15": 3,
+              "16": 1,
+              "17": 2,
+              "18": 1
+            },
+            "stableford": 31,
+            "bonus": 0,
+            "total": 31,
+            "roundId": "134739",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 46812,
+          "playerName": "Terry Battersby",
+          "rounds": 1,
+          "stableford": 31,
+          "bonus": 0,
+          "points": 31,
+          "position": 8,
+          "holeData": {
+            "holes": {
+              "1": 2,
+              "2": 3,
+              "3": 1,
+              "4": 2,
+              "5": 2,
+              "6": 3,
+              "7": 2,
+              "8": 0,
+              "9": 3,
+              "10": 2,
+              "11": 0,
+              "12": 2,
+              "13": 0,
+              "14": 3,
+              "15": 1,
+              "16": 2,
+              "17": 1,
+              "18": 2
+            },
+            "stableford": 31,
+            "bonus": 0,
+            "total": 31,
+            "roundId": "134669",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 11653,
+          "playerName": "Tony Bretherton",
+          "rounds": 1,
+          "stableford": 30,
+          "bonus": 0,
+          "points": 30,
+          "position": 9,
+          "holeData": {
+            "holes": {
+              "1": 3,
+              "2": 1,
+              "3": 2,
+              "4": 2,
+              "5": 3,
+              "6": 2,
+              "7": 3,
+              "8": 2,
+              "9": 2,
+              "10": 0,
+              "11": 0,
+              "12": 1,
+              "13": 1,
+              "14": 2,
+              "15": 1,
+              "16": 3,
+              "17": 2,
+              "18": 0
+            },
+            "stableford": 30,
+            "bonus": 0,
+            "total": 30,
+            "roundId": "134737",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 23985,
+          "playerName": "Lee Smith",
+          "rounds": 1,
+          "stableford": 30,
+          "bonus": 0,
+          "points": 30,
+          "position": 10,
+          "holeData": {
+            "holes": {
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 1,
+              "5": 2,
+              "6": 2,
+              "7": 3,
+              "8": 2,
+              "9": 2,
+              "10": 2,
+              "11": 0,
+              "12": 2,
+              "13": 2,
+              "14": 0,
+              "15": 0,
+              "16": 2,
+              "17": 3,
+              "18": 1
+            },
+            "stableford": 30,
+            "bonus": 0,
+            "total": 30,
+            "roundId": "134684",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 11761,
+          "playerName": "Matthew Cragg",
+          "rounds": 1,
+          "stableford": 29,
+          "bonus": 0,
+          "points": 29,
+          "position": 11,
+          "holeData": {
+            "holes": {
+              "1": 2,
+              "2": 1,
+              "3": 1,
+              "4": 2,
+              "5": 3,
+              "6": 2,
+              "7": 2,
+              "8": 2,
+              "9": 2,
+              "10": 1,
+              "11": 1,
+              "12": 0,
+              "13": 1,
+              "14": 1,
+              "15": 2,
+              "16": 2,
+              "17": 2,
+              "18": 2
+            },
+            "stableford": 29,
+            "bonus": 0,
+            "total": 29,
+            "roundId": "134735",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 12237,
+          "playerName": "Simon Parker",
+          "rounds": 1,
+          "stableford": 29,
+          "bonus": 0,
+          "points": 29,
+          "position": 12,
+          "holeData": {
+            "holes": {
+              "1": 2,
+              "2": 2,
+              "3": 3,
+              "4": 2,
+              "5": 3,
+              "6": 1,
+              "7": 1,
+              "8": 3,
+              "9": 0,
+              "10": 2,
+              "11": 0,
+              "12": 2,
+              "13": 2,
+              "14": 3,
+              "15": 2,
+              "16": 0,
+              "17": 0,
+              "18": 1
+            },
+            "stableford": 29,
+            "bonus": 0,
+            "total": 29,
+            "roundId": "134761",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 11969,
+          "playerName": "Craig Harrison",
+          "rounds": 1,
+          "stableford": 26,
+          "bonus": 0,
+          "points": 26,
+          "position": 13,
+          "holeData": {
+            "holes": {
+              "1": 0,
+              "2": 1,
+              "3": 1,
+              "4": 1,
+              "5": 0,
+              "6": 1,
+              "7": 2,
+              "8": 1,
+              "9": 2,
+              "10": 2,
+              "11": 3,
+              "12": 2,
+              "13": 2,
+              "14": 2,
+              "15": 1,
+              "16": 2,
+              "17": 1,
+              "18": 2
+            },
+            "stableford": 26,
+            "bonus": 0,
+            "total": 26,
+            "roundId": "134694",
+            "date": ""
+          }
+        },
+        {
+          "playerId": 12004,
+          "playerName": "Neil Hodgson",
+          "rounds": 1,
+          "stableford": 23,
+          "bonus": 0,
+          "points": 23,
+          "position": 14,
+          "holeData": {
+            "holes": {
+              "1": 2,
+              "2": 2,
+              "3": 2,
+              "4": 1,
+              "5": 3,
+              "6": 0,
+              "7": 2,
+              "8": 0,
+              "9": 2,
+              "10": 1,
+              "11": 1,
+              "12": 0,
+              "13": 0,
+              "14": 1,
+              "15": 2,
+              "16": 0,
+              "17": 2,
+              "18": 2
+            },
+            "stableford": 23,
+            "bonus": 0,
+            "total": 23,
+            "roundId": "134692",
+            "date": ""
+          }
+        }
+      ],
+      "commentary": {
+        "title": "Singles Medal - Recap",
+        "generatedBy": "Clubhouse correspondent (acerbic desk)",
+        "overallSummary": "A lovely sunny day for the season finale, which was fortunate because the nerves were frayed enough to need daylight supervision. Tony Wright emerged with 48 points despite a blob on 18, while Neil Hodgson finished last on 23; mercifully for Neil, his season-long form still carries him to the overall leaderboard title, so the final table has at least one thing that behaved as expected.",
+        "playerCommentary": [
+          {
+            "playerName": "Tony Wright",
+            "playerId": null,
+            "position": 1,
+            "totalPoints": 48,
+            "frontNine": 20,
+            "backNine": 18,
+            "blobHoles": [
+              18
+            ],
+            "seasonPosition": 11,
+            "seasonAverageBestEight": 36.5,
+            "summary": "Tony won with 48 points, turning a season position of 11 and a best-eight average of 36.5 into an afternoon of suspicious competence. He even blobbed the 18th, presumably wanting the victory to retain one small blemish rather than look entirely deliberate."
+          },
+          {
+            "playerName": "Paul P Hughes",
+            "playerId": null,
+            "position": 2,
+            "totalPoints": 46,
+            "frontNine": 21,
+            "backNine": 17,
+            "blobHoles": [
+              2,
+              16
+            ],
+            "seasonPosition": 6,
+            "seasonAverageBestEight": 38.0,
+            "summary": "Paul P Hughes produced 46 points, enough to finish second and enough to make the two blobs on 2 and 16 look like unnecessary editorial choices. His 21-point front nine promised a challenge for the title; the 17-point back nine filed that promise under 'not today'."
+          },
+          {
+            "playerName": "Graham Haydock",
+            "playerId": null,
+            "position": 3,
+            "totalPoints": 43,
+            "frontNine": 18,
+            "backNine": 19,
+            "blobHoles": [],
+            "seasonPosition": 2,
+            "seasonAverageBestEight": 42.75,
+            "summary": "Graham's 43 points and entirely blob-free card were the work of the day's most reliable adult. He finished third despite matching his lofty season profile closely, which is golf's way of rewarding sound administration with a podium place and no actual prize."
+          },
+          {
+            "playerName": "Marc Nelson",
+            "playerId": null,
+            "position": 4,
+            "totalPoints": 37,
+            "frontNine": 17,
+            "backNine": 16,
+            "blobHoles": [
+              4,
+              17
+            ],
+            "seasonPosition": 10,
+            "seasonAverageBestEight": 37.38,
+            "summary": "Marc Nelson scored 37, almost exactly on his 37.38 season average, proving that consistency can be another word for refusing to get involved. Blobs on 4 and 17 helped ensure that neither nine developed enough personality to threaten the top three."
+          },
+          {
+            "playerName": "Adam Shepherd",
+            "playerId": null,
+            "position": 5,
+            "totalPoints": 35,
+            "frontNine": 18,
+            "backNine": 15,
+            "blobHoles": [
+              13
+            ],
+            "seasonPosition": 4,
+            "seasonAverageBestEight": 39.5,
+            "summary": "Adam arrived as the season's fourth-best player and left with 35 points, well below his 39.5 best-eight average. The 18-point front nine was respectable; then hole 13 opened the trapdoor and the back nine contributed a fairly decisive 15."
+          },
+          {
+            "playerName": "Joseph O'Donnell",
+            "playerId": null,
+            "position": 6,
+            "totalPoints": 32,
+            "frontNine": 16,
+            "backNine": 16,
+            "blobHoles": [
+              1
+            ],
+            "seasonPosition": 9,
+            "seasonAverageBestEight": 37.75,
+            "summary": "Joseph O'Donnell split his 32 points perfectly between the nines, achieving balance where most of the field achieved panic. A blob on the opening hole was an early warning, and the final total sat a good distance below his 37.75 season average."
+          },
+          {
+            "playerName": "Craig Coulton",
+            "playerId": null,
+            "position": 7,
+            "totalPoints": 31,
+            "frontNine": 13,
+            "backNine": 18,
+            "blobHoles": [
+              4,
+              6
+            ],
+            "seasonPosition": 16,
+            "seasonAverageBestEight": 33.75,
+            "summary": "Craig Coulton recovered from a grim 13-point front nine to post 18 coming home, which is admirable if one ignores the requirement to play both halves. Blobs on 4 and 6 helped explain the early damage, while 31 points remained below even his modest 33.75 season average."
+          },
+          {
+            "playerName": "Terry Battersby",
+            "playerId": null,
+            "position": 8,
+            "totalPoints": 31,
+            "frontNine": 18,
+            "backNine": 13,
+            "blobHoles": [
+              8,
+              11,
+              13
+            ],
+            "seasonPosition": 17,
+            "seasonAverageBestEight": 31.25,
+            "summary": "Terry Battersby was almost perfectly aligned with his season average, producing 31 points and therefore no evidence that the finale had changed anything. The 18-point front nine dissolved into 13 on the back, with blobs on 8, 11 and 13 providing the supporting documentation."
+          },
+          {
+            "playerName": "Tony Bretherton",
+            "playerId": null,
+            "position": 9,
+            "totalPoints": 30,
+            "frontNine": 20,
+            "backNine": 10,
+            "blobHoles": [
+              10,
+              11,
+              18
+            ],
+            "seasonPosition": 15,
+            "seasonAverageBestEight": 35.0,
+            "summary": "Tony Bretherton opened with 20 points and then apparently decided the round had gone on long enough, returning just 10 on the back nine. Blobs on 10 and 11 made the collapse immediate, while 18 added a final flourish to a 30-point score well short of his 35.0 average."
+          },
+          {
+            "playerName": "Lee Smith",
+            "playerId": null,
+            "position": 10,
+            "totalPoints": 30,
+            "frontNine": 18,
+            "backNine": 12,
+            "blobHoles": [
+              11,
+              14,
+              15
+            ],
+            "seasonPosition": 13,
+            "seasonAverageBestEight": 35.62,
+            "summary": "Lee Smith matched Bretherton on 30 points but took a more gradual route to the disappointment, sliding from 18 on the front to 12 on the back. Three blobs on 11, 14 and 15 turned the closing stretch into a practical demonstration of why scorecards have columns."
+          },
+          {
+            "playerName": "Matthew Cragg",
+            "playerId": null,
+            "position": 11,
+            "totalPoints": 29,
+            "frontNine": 17,
+            "backNine": 12,
+            "blobHoles": [
+              12
+            ],
+            "seasonPosition": 5,
+            "seasonAverageBestEight": 38.38,
+            "summary": "Matthew Cragg, fifth in the season standings with a 38.38 average, managed 29 points when the year reached its final exam. A solitary blob on 12 was less a catastrophe than a footnote; the real damage was the anonymous 12-point back nine."
+          },
+          {
+            "playerName": "Simon Parker",
+            "playerId": null,
+            "position": 12,
+            "totalPoints": 29,
+            "frontNine": 17,
+            "backNine": 12,
+            "blobHoles": [
+              9,
+              11,
+              16,
+              17
+            ],
+            "seasonPosition": 14,
+            "seasonAverageBestEight": 35.5,
+            "summary": "Simon Parker also reached 29 points, though he took the scenic route through four blobs on 9, 11, 16 and 17. The identical 17-and-12 split to Cragg suggests a shared collapse template, only Simon insisted on adding more supporting evidence."
+          },
+          {
+            "playerName": "Craig Harrison",
+            "playerId": null,
+            "position": 13,
+            "totalPoints": 26,
+            "frontNine": 9,
+            "backNine": 17,
+            "blobHoles": [
+              1,
+              5
+            ],
+            "seasonPosition": 3,
+            "seasonAverageBestEight": 39.62,
+            "summary": "Craig Harrison was third in the season and averaged 39.62, which made his opening-nine return of 9 points especially ambitious in its awfulness. He recovered to 17 on the back, but blobs on 1 and 5 had already turned the round into damage limitation with a sunny backdrop."
+          },
+          {
+            "playerName": "Neil Hodgson",
+            "playerId": null,
+            "position": 14,
+            "totalPoints": 23,
+            "frontNine": 14,
+            "backNine": 9,
+            "blobHoles": [
+              6,
+              8,
+              12,
+              13,
+              16
+            ],
+            "seasonPosition": 1,
+            "seasonAverageBestEight": 43.0,
+            "summary": "Neil Hodgson finished last with 23 points, including five blobs and a back nine worth only 9, an impressively poor closing statement from the season's leading player. Fortunately his 43.0 best-eight average had already done the heavy lifting, so he still wins the overall leaderboard while this round is quietly removed from polite conversation."
           }
         ]
       }
